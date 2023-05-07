@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import TopHeader from './components/TopHeader'
 import WebFont from "webfontloader";
+import NavBar from './components/NavBar';
 
 function App() {
   useEffect(()=>{
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className='font-poppins'>
       <TopHeader/>
+      <NavBar/>
 
     </div>
   )
