@@ -10,69 +10,43 @@ function NavBar() {
     { Applications: ["1", "2", "3"] },
     { Resources: ["1"] },
   ];
+  //for DropDownItems
   const [isOpen, setOpen] = useState(false);
   // State for controlling the mobile menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="flex flex-wrap justify-between sm:p-14  p-5 ">
-      {/* Logo and menu for desktop screens */}
-      <div className="hidden md:flex items-center justify-around display:inline-block">
-        <img className="mr-16" src="./src/assets/aicanlogo.svg" alt="Error" />
-        <div className="flex ">
-          {items.map((item, i) => {
-            return <DropDown key={i} items={item} />;
-          })}
-        </div>
-      </div>
-
-      {/* Mobile menu toggle button */}
-      <button
-        className="md:hidden text-3xl text-gray-500 focus:outline-none"
-        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-      >
-        <AiOutlineMenu />
-      </button>
-
-      {/* Drawer for mobile screens */}
-      {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 right-0 bottom-0 z-50 bg-white">
-          <div className="flex justify-between items-center px-4 py-3 border-b-2 border-gray-300">
-            <img src="./src/assets/aicanlogo.svg" alt="Error"   />
-            <button className="text-2xl text-gray-500 focus:outline-none" onClick={() => setMobileMenuOpen(false)}>
-              &times;
-            </button>
-          </div>
-          <ul className="py-4 px-2">
+    <div className="h-40   flex items-center">
+      <div className="flex justify-between p-5 w-full  items-center">
+        <div className="flex items-center justify-center">
+          <button
+            onClick={() => {
+              setMobileMenuOpen(!isMobileMenuOpen);
+            }}
+          >
+            <div className=" xsm:hidden">
+              <AiOutlineMenu></AiOutlineMenu>
+            </div>
+          </button>
+          <img className="md:ml-10 lg:mr-16 hidden xxsm:flex " src="./src/assets/aicanlogo.svg" />
+          <div className="hidden xsm:flex ">
             {items.map((item, i) => {
-              
-              return (
-                <li key={i} className="mb-2">
-                  <DropDown items={item} isOpen={isOpen} setOpen={setOpen} />
-                  {isOpen && (
-                    <ul className="pl-4">
-                      {Object.values(item)[0].map((value, index) => (
-                        <li key={index} className="py-2">
-                          {value}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              );
+              return <DropDown key={i} items={item} />;
             })}
-          </ul>
+          </div>
         </div>
-      )}
-
-      {/* Search and demo button */}
-      <div className="flex justify-around items-center">
-        <span className=" " style={{ fontSize: "24px" }}>
-          <AiOutlineSearch className="stroke-[15px] " />
-        </span>
-        <Button success rounded className="h-10 p-7 text-lg">
-          Schedule a Demo
-        </Button>
+        <div className="flex justify-around items-center">
+          <span className=" " style={{ fontSize: "24px" }}>
+            <AiOutlineSearch className="stroke-[15px] " />
+          </span>
+          <Button
+            success
+            rounded
+            className="h-10 md:mr-10 xsm:p-2 sm:p-3 lg:p-7 md:text-lg sm:text-xs "
+          >
+            Schedule a Demo
+          </Button>
+        </div>
       </div>
     </div>
   );

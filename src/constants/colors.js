@@ -1,6 +1,6 @@
 class Colors{
     primary='bg-blue-950';
-    secondary=''
+    textprimary='text-blue-600'
 }
 
 export default Colors;
