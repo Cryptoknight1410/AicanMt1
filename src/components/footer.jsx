@@ -3,7 +3,10 @@ import Colors from "../constants/colors";
 let colors = new Colors();
 function Footer() {
   return (
-    <div className={`${colors.primary} flex justify-around p-20`}>
+    <>
+    
+
+    <div className={`${colors.bgPrimary} flex justify-around p-20`}>
       <div className="flex flex-col">
         <div className="h-16 w-22 mb-7">
           <img
@@ -29,12 +32,12 @@ function Footer() {
             src="./src/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
-          />
+            />
           <img
             src="./src/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
-          />
+            />
         </div>
       </div>
       {/* 2nd column */}
@@ -76,6 +79,7 @@ function Footer() {
       </div>
       
     </div>
+            </>
   );
 }
 

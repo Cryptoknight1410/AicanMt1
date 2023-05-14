@@ -1,21 +1,41 @@
 import React from "react";
 import Button from "./Button";
 import Colors from "../constants/colors";
+import TypewriterComponent from "typewriter-effect";
 
 function Hero() {
   let colors = new Colors();
   return (
-    <div className="mt-14 ">
+    <div className="lg:mt-20 xxsm:mt-3">
       <div className="flex flex-col justify-center items-center">
-        <h1 className=" text-5xl lg:text-8xl font-bold text-black text-center mb-2">
+        <h1 className="text-lg xxsm:text-5xl lg:text-7xl font-bold text-black text-center xxsm:mb-2">
           Improved floor level visibility
         </h1>
-        <p
-          className={`text-4xl lg:text-8xl font-bold ${colors.textprimary} text-center space-y-4`}
-        >
-          <span className="text-black "> to enhance</span> production
-        </p>
-        <p className="text-lg font-semibold text-center mt-4">
+        <div className="flex flex-wrap text-center justify-center ">
+          <p
+            className={`text-lg xxsm:text-4xl lg:text-7xl font-bold text-black  text-center space-y-4 `}
+          >
+            to enhance &nbsp;
+          </p>
+          <span
+            className={`${colors.textPrimary} text-lg xxsm:text-4xl lg:text-7xl font-bold    text-center space-y-4`}
+          >
+            <TypewriterComponent
+              options={{
+                strings: [
+                  "production",
+                  "savings",
+                  "operations",
+                  "decision making",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 100,
+              }}
+            ></TypewriterComponent>
+          </span>
+        </div>
+        <p className="text-xs md:text-base font-semibold text-center mt-4">
           Optimize your factory operations with AICAN's SaaS platform,
           leveraging IoT technology to drive efficiency, minimize waste, and
           &nbsp;
@@ -23,60 +43,63 @@ function Hero() {
           <span class="block lg:break-words ">accelerate business growth.</span>
         </p>
 
-        <Button success className=" p-5 mt-5" rounded>
+        <Button
+          className={`text-sm ${colors.buttonColor}
+         px-3 py-2  md:px-5 md:py-3 mt-5 lg:text-lg ${colors.textSecondary}`}
+          rounded
+        >
           See how it Works
         </Button>
-        <div className="flex mt-5 items-center bg-gray-300 justify-center  rounded-3xl w-4/5 h-96 text-white ml-44 mr-44">
-          <img src="./src/assets/aicanlogo.svg"></img>
+        <div class="w-800 h-700">
+          <img
+            src="./src/assets/HeroAssets.svg"
+            class="w-full h-full object-cover"
+          />
         </div>
       </div>
 
-      <div className=" flex flex-wrap justify-around mt-5">
+      <div className="hidden  lg:flex flex-wrap justify-around mt-5 w-3/4 mx-auto">
         <div className="flex flex-col">
-          <div className="h-64 w-48">
+          <div className="h-48 w-48">
             <img
               src="./src/assets/rocket.svg"
               className="h-full w-4/5 object-contain"
             ></img>
           </div>
-          <p className=" text-center w-44 font-semibold text-2xl">
+          <p className={` text-center w-44 font-semibold text-2xl ${colors.subheadingColor}`}>
             Easy and fast deployment
           </p>
         </div>
         <div className="flex flex-col">
-          <div className="h-64 w-48">
+          <div className="h-48 w-48">
             <img
               src="./src/assets/mindmap.svg"
               className="h-full w-4/5 object-contain"
             ></img>
           </div>
-          <p className="text-center w-52 font-semibold text-2xl">
-            Data-driven decision making
-          </p>
+          <p className={`text-center w-56 font-semibold text-2xl ${colors.subheadingColor}`}>
+            Data-driven decision making </p>
         </div>
         <div className="flex flex-col">
-          <div className="h-64 w-48">
+          <div className="h-48 w-48">
             <img
               src="./src/assets/positivedynamic.svg"
               className="h-full w-4/5 object-contain"
             ></img>
           </div>
-          <p className=" text-center w-56 font-semibold text-2xl">
-            Start generating ROI in weeks
-          </p>
+          <p className={`text-center w-56 font-semibold text-2xl ${colors.subheadingColor}`}>
+            Start generating ROI in weeks </p>
         </div>
         <div className="flex flex-col">
-          <div className="h-64 w-48">
+          <div className="h-48 w-48">
             <img
               src="./src/assets/workspace.svg"
               className="h-full w-4/5 object-contain"
             ></img>
           </div>
-          <p className=" text-center w-44 font-semibold text-2xl">
-            Simple UI for all users alike
-          </p>
+          <p className={`text-center w-56 font-semibold text-2xl ${colors.subheadingColor}`}>
+            Simple UI for all users alike </p>
         </div>
-        
       </div>
     </div>
   );
