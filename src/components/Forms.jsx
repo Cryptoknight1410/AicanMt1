@@ -4,111 +4,217 @@ import Button from "./Button";
 let colors = new Colors();
 function Forms() {
   return (
-   
+    // <div class={`flex justify-center  rounded-3xl mt-16 `}>
+    //   <div className={`${colors.bgPrimary} w-3/5 rounded-3xl lg:px-32 py-24`}>
+    //     <div className={`flex-col flex`}>
+    //           <h1 className={`w-3/5
+    //           ${colors.textSecondary} text-6xl`}>YOUR FACTORY, OUR EXPERTISE</h1>
+    //           <div className="h-10"></div>
+    //             <p className={`${colors.textSecondary} text-lg`}>Looking to jump start your digital transformation journey? </p>
+    //           <div className="h-10"></div>
+    //             <p className={`${colors.textSecondary} text-lg w-4/5`}>Our team of experts are ready to guide you through the process of implementing AICAN's cutting-edge solutions into your manufacturing processes. With a personalized approach and a focus on your specific needs, we'll help you streamline operations and achieve new levels of efficiency.</p>
+    //             <div className="h-10"></div>
+    //             <div className={`flex`}>
 
+    //               <div className={`flex flex-col`}>
+    //               <img
+    //         src="https://via.placeholder.com/100x100"
+    //         alt="Image 1"
+    //         class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
+    //       />
+    //       <p className={`mt-2 ${colors.textSecondary}`}>Vedant Awasthi</p>
+    //       <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
+    //               </div>
+    //               <div className="w-5">
 
-    <div class="flex flex-col lg:flex-row justify-center my-16 ">
-  <div class="bg-blue-950 max-w-4xl rounded-3xl h-auto lg:h-1/2 overflow-hidden hidden md:block shadow-lg my-10 px-4 lg:px-10 py-8 lg:py-12 bg-primary text-white">
-    <div class="hidden lg:block box-border p-4 lg:p-8">
-      <h2 class="w-full lg:w-[400px] mb-10 text-5xl font-bold">
-        YOUR FACTORY, OUR EXPERTISE
-      </h2>
-      <p class="mb-4">
-        Looking to jump start your digital transformation journey?
-      </p>
-      <div class="h-5"></div>
-      <p class="w-full lg:w-1/2">
-        Our team of experts are ready to guide you through the process of implementing AICAN's cutting-edge solutions into your manufacturing processes. With a personalized approach and a focus on your specific needs, we'll help you streamline operations and achieve new levels of efficiency.
-      </p>
-      <div class="h-16"></div>
-      <div class="flex flex-col lg:flex-row items-center mt-8 ">
-        <div class="mr-10 mb-4 lg:mb-0">
-          <img
-            src="https://via.placeholder.com/100x100"
-            alt="Image 1"
-            class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
-          />
-          <p class="mt-2">Vedant Awasthi</p>
-          <p class="">Co-Founder of Aican</p>
+    //               </div>
+    //               <div className={`flex flex-col`}>
+    //               <img
+    //         src="https://via.placeholder.com/100x100"
+    //         alt="Image 1"
+    //         class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
+    //       />
+    //       <p className={`mt-2 ${colors.textSecondary}`}>Ritwik Dhar</p>
+    //       <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
+    //               </div>
+
+    //             </div>
+
+              
+
+    //       </div>
+
+    //   </div>
+    //   <div className={`${colors.card1} w-2/5 my-10 h-[75%] relative right-20 rounded-3xl p-32`}>
+    //   <h2 class="text-5xl font-bold mb-4 text-center lg:text-left">
+    //   Talk to our <span class="text-green-700">Experts</span>
+    // </h2>
+    // <p class="text-gray-600 mb-6 font-medium text-center lg:text-left">
+    //   Contact us today to learn more and start your journey towards a smarter future.
+    // </p>
+
+    // <form>
+    // <div class="mb-4">
+    //     <label class="block text-gray-700 font-bold mb-2" for="name">
+    //       Name
+    //     </label>
+    //     <input
+    //       class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    //       id="name"
+    //       type="text"
+    //       placeholder="Enter your name"
+    //     />
+    //   </div>
+    //   <div class="mb-4">
+    //   <label class="block text-gray-700 font-bold mb-2" for="email">
+    //       Email
+    //     </label>
+    //          <input
+    //            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    //            id="email"
+    //            type="email"
+    //            placeholder="Enter your email"
+    //          />
+    //        </div>
+    //        <div class="mb-4">
+    //          <label class="block text-gray-700 font-bold mb-2" for="contact">
+    //            Contact
+    //         </label>
+    //          <input
+    //            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    //            id="contact"
+    //            type="text"
+    //            placeholder="Enter your phone number"
+    //          />
+    //        </div>
+    //        <div class="mb-4">
+    //          <label class="block text-gray-700 font-bold mb-2" for="company">
+    //            Company
+    //          </label>
+    //          <input
+    //            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    //            id="company"
+    //            type="text"
+    //            placeholder="Enter your company name"
+    //          />
+    //        </div>
+    //        <div className="h-16"></div>
+    //        <button success 
+    //          className={` ${colors.textSecondary} font-bold py-2 px-4 rounded-xl block  focus:outline-none focus:shadow-outline w-full text-center ${colors.buttonColor}`}
+           
+    //        >
+    //          Submit
+    //        </button>
+    // </form>
+
+    //   </div>
+    // </div>
+
+    <div class={`flex justify-center rounded-3xl md:my-28 my-5 `}>
+    <div className={`hidden md:block ${colors.bgPrimary} md:w-[50%] md:rounded-3xl md:ml-48 lg:px-32 py-24`}>
+      <div className={`flex-col flex`}>
+            <h1 className={`w-[65%]
+            ${colors.textSecondary} text-6xl`}>YOUR FACTORY, OUR EXPERTISE</h1>
+            <div className="h-10"></div>
+              <p className={`${colors.textSecondary} text-lg`}>Looking to jump start your digital transformation journey? </p>
+            <div className="h-10"></div>
+              <p className={`${colors.textSecondary} text-lg w-4/5`}>Our team of experts are ready to guide you through the process of implementing AICAN's cutting-edge solutions into your manufacturing processes. With a personalized approach and a focus on your specific needs, we'll help you streamline operations and achieve new levels of efficiency.</p>
+              <div className="h-28"></div>
+              <div className={`flex`}>
+
+                <div className={`flex flex-col`}>
+                <img
+          src="https://via.placeholder.com/100x100"
+          alt="Image 1"
+          class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
+        />
+        <p className={`mt-2 ${colors.textSecondary}`}>Vedant Awasthi</p>
+        <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
+                </div>
+                <div className="w-5">
+
+                </div>
+                <div className={`flex flex-col`}>
+                <img
+          src="https://via.placeholder.com/100x100"
+          alt="Image 1"
+          class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
+        />
+        <p className={`mt-2 ${colors.textSecondary}`}>Ritwik Dhar</p>
+        <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
+                </div>
+
+              </div>
+
+            
+
         </div>
-        <div class="w-full lg:w-1/2">
-          <img
-            src="https://via.placeholder.com/100x100"
-            alt="Image 2"
-            class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
-          />
-          <p class="mt-2">Ritwik Dhar</p>
-          <p class="">Co-Founder of Aican</p>
-        </div>
-        <div class="lg:relative right-[160px] bottom-[80px]">
-          <img src="./src/assets/Hi.svg" alt="Hi" class="" />
-        </div>
-      </div>
+
+    </div>
+    <div className={`${colors.card1} w-4/5  md:w-2/5 my-10 h-[75%] relative md:right-28 rounded-3xl md:p-32 py-10 px-5`}>
+    <h2 class="text-xl md:text-5xl font-bold mb-4 text-center lg:text-left">
+    Talk to our <span class="text-green-700">Experts</span>
+  </h2>
+  <p class="text-gray-600 mb-6 font-medium text-center lg:text-left">
+    Contact us today to learn more and start your journey towards a smarter future.
+  </p>
+
+  <form>
+  <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="name">
+        Name
+      </label>
+      <input
+        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div class="mb-4">
+    <label class="block text-gray-700 font-bold mb-2" for="email">
+        Email
+      </label>
+           <input
+             class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+             id="email"
+             type="email"
+             placeholder="Enter your email"
+           />
+         </div>
+         <div class="mb-4">
+           <label class="block text-gray-700 font-bold mb-2" for="contact">
+             Contact
+          </label>
+           <input
+             class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+             id="contact"
+             type="text"
+             placeholder="Enter your phone number"
+           />
+         </div>
+         <div class="mb-4">
+           <label class="block text-gray-700 font-bold mb-2" for="company">
+             Company
+           </label>
+           <input
+             class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+             id="company"
+             type="text"
+             placeholder="Enter your company name"
+           />
+         </div>
+         <div className="h-16"></div>
+         <button success 
+           className={` ${colors.textSecondary} font-bold py-2 px-4 rounded-xl block  focus:outline-none focus:shadow-outline w-full text-center ${colors.buttonColor}`}
+         
+         >
+           Submit
+         </button>
+  </form>
+
     </div>
   </div>
-  <div class="bg-gray-100 z-40 rounded-3xl shadow-lg w-full lg:w-auto px-6 lg:px-32 py-6 lg:py-32 mt-10 lg:mt-0 lg:relative lg:left-[-200px]">
-    <h2 class="text-5xl font-bold mb-4 text-center lg:text-left">
-      Talk to our <span class="text-green-700">Experts</span>
-    </h2>
-    <p class="text-gray-600 mb-6 font-medium text-center lg:text-left">
-      Contact us today and start your journey towards a smarter future
-    </p>
-    <form>
-      <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="name">
-          Name
-        </label>
-        <input
-          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="name"
-          type="text"
-          placeholder="Enter your name"
-        />
-      </div>
-      <div class="mb-4">
-      <label class="block text-gray-700 font-bold mb-2" for="email">
-          Email
-        </label>
-             <input
-               class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-               id="email"
-               type="email"
-               placeholder="Enter your email"
-             />
-           </div>
-           <div class="mb-4">
-             <label class="block text-gray-700 font-bold mb-2" for="contact">
-               Contact
-            </label>
-             <input
-               class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-               id="contact"
-               type="text"
-               placeholder="Enter your phone number"
-             />
-           </div>
-           <div class="mb-4">
-             <label class="block text-gray-700 font-bold mb-2" for="company">
-               Company
-             </label>
-             <input
-               class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-               id="company"
-               type="text"
-               placeholder="Enter your company name"
-             />
-           </div>
-           <Button success
-             className="  text-white font-bold py-2 px-4 rounded-xl block self-center focus:outline-none focus:shadow-outline"
-           
-           >
-             Submit
-           </Button>
-         </form>
-     
-     
-</div>
-</div>
   );
 }
 
