@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import HomePage from './pages/HomePage';
 import WebFont from 'webfontloader';
+
 function App() {
   useEffect(()=>{
     WebFont.load({google:{
@@ -9,8 +10,10 @@ function App() {
   },[]);
   return (
     <div className='font-poppins'>
-      <HomePage></HomePage>
-</div>
+      
+    <HomePage></HomePage>
+
+     </div>
   )
 }
 

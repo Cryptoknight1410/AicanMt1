@@ -1,19 +1,93 @@
 import React, { useState } from "react";
-import { AiOutlineSearch, AiOutlineMenu } from "react-icons/all";
-import DropDown from "./DropDown";
+import { AiOutlineMenu } from "react-icons/all";
 import Button from "./Button";
 import Colors from "../constants/colors";
+import NavBarExpansion from "./NavBarExpansion";
+
 
 function NavBar() {
   const colors = new Colors();
   const items = [
-    { Platform: ["Khushi", "2", "3"] },
-    { Industries: ["1", "2", "3"] },
-    { Applications: ["1", "2", "3"] },
-    { Resources: ["1"] },
+   
+    {
+      Platform: [
+        {'Platforms':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
+        {
+          'AICAN SME':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors.  '
+        },
+        {
+          'AICAN Micro':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'AICAN Sensing':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'AICAN IoT':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        }
+      ] ,
+
+     
+     },
+    {
+      Industries: [
+        {'Industries':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
+        {
+          'Automobile':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Electronics':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Packaging':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Pharmaeuticals':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        }
+      ] ,
+
+     
+     },
+    {
+      Applications: [
+        {'Error Tracing':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
+        {
+          'Worker Analytics':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Machine Health':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Inventory':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Pharmaeuticals':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        }
+      ] ,
+
+     
+     },
+    {
+      Resources: [
+        {'Blogs':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
+        {
+          'Case Studies':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Calculators':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'OEE ':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
+        {
+          'Downtime':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        }
+      ] ,
+
+     
+     },
+   
   ];
-  //for DropDownItems
-  const [isOpen, setOpen] = useState(false);
+  
   // State for controlling the mobile menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -36,7 +110,7 @@ function NavBar() {
           />
           <div className="hidden xsm:flex ">
             {items.map((item, i) => {
-              return <DropDown key={i} items={item} />;
+              return <NavBarExpansion  key={i} items={item} />;
             })}
           </div>
         </div>

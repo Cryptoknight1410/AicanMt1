@@ -6,9 +6,9 @@ import TypewriterComponent from "typewriter-effect";
 function Hero() {
   let colors = new Colors();
   return (
-    <div className="lg:mt-20 xxsm:mt-3">
+    <div className="lg:mt-20 xxsm:mt-3 z-10">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-lg xxsm:text-5xl lg:text-7xl font-bold text-black text-center xxsm:mb-2">
+        <h1 className="text-lg xxsm:text-5xl  lg:text-7xl font-bold text-black text-center xxsm:mb-2">
           Improved floor level visibility
         </h1>
         <div className="flex flex-wrap text-center justify-center ">

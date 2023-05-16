@@ -1,5 +1,6 @@
 class Colors{
     bgPrimary='bg-blue-950';
+    bgWhite='bg-white';
     textPrimary='text-blue-600'
     buttonColor='bg-[#13A049]'
     textGreenColor='text-[#13A049]'
@@ -13,6 +14,8 @@ class Colors{
     card2="bg-[#FFF1EE]"
     textTomotoColor="text-[#F75402]"
     borderTomotoColor="border-[#F75402]"
+    NavBarcolor="text-[#343434]"
+    
 }
 
 export default Colors;
