@@ -11,7 +11,7 @@ function Footer() {
         <div className="h-16 w-22 mb-7">
           <img
             classname="w-full object-contain"
-            src="./src/assets/aicanlogo2.svg"
+            src="../src/assets/aicanlogo2.svg"
           ></img>
         </div>
         <p className="text-white w-64">
@@ -24,17 +24,17 @@ function Footer() {
         <p className="text-white">770992975</p>
         <div className="flex">
           <img
-            src="./src/assets/linkdln.svg"
+            src="../src/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
           />
           <img
-            src="./src/assets/linkdln.svg"
+            src="../src/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
           <img
-            src="./src/assets/linkdln.svg"
+            src="../src/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
             />

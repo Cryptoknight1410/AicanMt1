@@ -31,32 +31,32 @@ function Blogs() {
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <Card
                   image="https://tailwindui.com/img/placeholder-images/gray-600/indoor-soccer-600x600-1.jpg"
-                  title="Indoor Soccer"
+                  title="OEE Videos"
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra libero vel ex gravida."
                 />
                 <Card
                   image="https://tailwindui.com/img/placeholder-images/gray-600/basketball-600x600-1.jpg"
-                  title="Basketball"
+                  title="OEE Vidoes"
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra libero vel ex gravida."
                 />
                 <Card
                   image="https://tailwindui.com/img/placeholder-images/gray-600/tennis-600x600-1.jpg"
-                  title="Tennis"
+                  title="Oee Videos"
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra libero vel ex gravida."
                 />
                 <Card
                   image="https://tailwindui.com/img/placeholder-images/gray-600/football-600x600-1.jpg"
-                  title="Football"
+                  title="Oee videos"
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra libero vel ex gravida."
                 />
                 <Card
                   image="https://tailwindui.com/img/placeholder-images/gray-600/volleyball-600x600-1.jpg"
-                  title="Volleyball"
+                  title="Oee Videos"
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra libero vel ex gravida."
                 />
                 <Card
                   image="https://tailwindui.com/img/placeholder-images/gray-600/hockey-600x600-1.jpg"
-                  title="Hockey"
+                  title="Oee videos"
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra libero vel ex gravida."
                 />
               </div>

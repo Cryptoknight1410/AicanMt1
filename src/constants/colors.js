@@ -4,6 +4,7 @@ class Colors{
     textPrimary='text-blue-600'
     buttonColor='bg-[#13A049]'
     textGreenColor='text-[#13A049]'
+    textGreenColor2='text-[#17AD49]'
     borderGreenColor='border-[#13A049]'
     textSecondary='text-white'
     headingColor='text-[#1A74E8]'

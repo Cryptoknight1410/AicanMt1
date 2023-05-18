@@ -10,7 +10,7 @@ export default function Seehowitworks({ text }) {
         className={`${colors.bgPrimary} box-border lg:px-12 lg:py-24 xxsm:py-10 w-4/5  flex rounded-3xl justify-around flex-wrap`}
       >
         <img
-          src="./src/assets/database.svg"
+          src="../src/assets/database.svg"
           className="hidden lg:block relative lg:bottom-20 lg:left-10  "
         ></img>
 
