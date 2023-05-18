@@ -1,16 +1,16 @@
 import React from 'react'
-import TopHeader from '../components/TopHeader'
-import NavBar from '../components/NavBar'
+import TopHeader from '../components/common/TopHeader'
+import NavBar from '../components/common/NavBar'
 import Hero from '../components/Hero'
-import Seehowitworks from '../components/seehowitworks'
+import Seehowitworks from '../components/common/seehowitworks'
 import Technology from '../components/technology'
 import QandA from '../components/QandA'
 import Card1 from '../components/card1';
 import Card2 from '../components/card2';
 import Features from '../components/Features';
 import Blogs from '../components/Blogs';
-import Footer from '../components/footer'
-import Forms from '../components/Forms'
+import Footer from '../components/common/footer'
+import Forms from '../components/common/Forms'
 function HomePage() {
   return (
     <>

@@ -75,14 +75,14 @@ function Blogs() {
       
   return (
     <div className="flex flex-col justify-center items-center mt-16">
-    <h3 className="text-blue-950 space-x-1 text-5xl mb-8 text-center font-semibold">
+    <h3 className="text-blue-950 space-x-1 text-4xl mb-8 text-center font-semibold">
       Modular Platform for Your Unique Needs
     </h3>
-    <h1 className="sm:text-lg lg:text-2xl  text-black text-center mb-2 w-[60%] md:w-[60%]">
+    <h1 className="sm:text-lg lg:text-xl  text-black text-center mb-2 w-[60%] md:w-[60%]">
     We understand that every factory has unique requirements and challenges. Our platform is designed to be highly customizable to meet those needs, both in terms of hardware and software. With AICAN, you don't need to make any changes to your existing factory setup.
     </h1>
 
-    <div className='hidden md:block'>
+    <div className='hidden md:block mt-6'>
         <Blog></Blog>
     </div>
     </div>

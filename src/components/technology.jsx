@@ -6,19 +6,19 @@ function Technology() {
   return (
     <div className="flex flex-col justify-center items-center mt-16">
       <h3
-        className={`${colors.headingColor}  text-2xl text-center font-semibold`}
+        className={`${colors.headingColor}  text-xl text-center font-semibold`}
       >
         TECHNOLOGY ARCHITECTURE
       </h3>
       <h1
-        className={`sm:text-lg ${colors.subheadingColor} lg:text-5xl font-bold text-center mb-2 w-[60%] md:w-[40%]`}
+        className={`sm:text-lg ${colors.subheadingColor} lg:text-4xl font-bold text-center mb-2 w-[60%] md:w-[40%]`}
       >
         Everything about your factory - all on a single screen
       </h1>
       <div
         className={`${colors.lightbluish} flex-col flex mb-9 mt-9 rounded-3xl w-4/5 box-border p-5`}
       >
-        <div className="p-8 flex flex-col md:flex-row items-center justify-center">
+        <div className=" px-8 flex flex-col md:flex-row items-center justify-center">
           <div className="w-full md:w-1/2 md:text-center mb-6 md:mb-0">
             <img
               src="./src/assets/tronics.svg"
@@ -26,19 +26,19 @@ function Technology() {
               className="mx-auto object-contain"
             />
           </div>
-          <div className="max-w-3xl mx-auto text-center md:text-left">
-            <div className="px-3 py-4">
+          <div className="max-w-2xl mx-auto text-center md:text-left ">
+            <div className="px-10 py-4">
               <h2
-                className={`text-lg lg:text-5xl ${colors.subheadingColor} sm:text-lg font-bold mb-16`}
+                className={`text-lg lg:text-4xl ${colors.subheadingColor} sm:text-lg font-bold mb-16`}
               >
                 Accelerate your Digital Transformation
               </h2>
-              <p className=" lg:text-xl sm:text-base  ">
+              <p className=" lg:text-base sm:text-base  ">
                 Embark on your digital transformation journey with AICAN's
                 game-changing SaaS platform.
               </p>
               <div className="h-5"></div>
-              <p className="lg:text-xl sm:text-base">
+              <p className="lg:text-base sm:text-base">
                 Designed by manufacturing experts, it empowers you to embrace
                 the future of manufacturing. Seamlessly access the platform via
                 web and mobile apps, leverage cutting-edge modular sensor
@@ -46,7 +46,7 @@ function Technology() {
                 efficiency.
               </p>
               <div className="h-5"></div>
-              <p className="lg:text-xl sm:text-base">
+              <p className="lg:text-base sm:text-base">
                 Let AICAN be your partner on the path to digital transformation
                 and drive your business forward.
               </p>

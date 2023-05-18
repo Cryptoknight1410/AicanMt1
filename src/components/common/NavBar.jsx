@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/all";
 import Button from "./Button";
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 import NavBarExpansion from "./NavBarExpansion";
 
 
@@ -49,7 +49,9 @@ function NavBar() {
      },
     {
       Applications: [
-        {'Error Tracing':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
+        {
+          'Application':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
         {
           'Worker Analytics':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
         },
@@ -59,9 +61,7 @@ function NavBar() {
         {
           'Inventory':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
         },
-        {
-          'Pharmaeuticals':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
-        }
+        {'Error Tracing':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
       ] ,
 
      
@@ -92,7 +92,7 @@ function NavBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="h-40 flex items-center">
+    <div className="h-36 flex items-center">
       <div className="flex justify-between p-5 w-full  items-center">
         <div className="flex items-center justify-center">
           <button
@@ -104,11 +104,16 @@ function NavBar() {
               <AiOutlineMenu></AiOutlineMenu>
             </div>
           </button>
-          <img
-            className="md:ml-10 lg:mr-16  xxsm:flex "
-            src="./src/assets/aicanlogo.svg"
-          />
-          <div className="hidden xsm:flex ">
+          <div className="w-28 ">
+  <img
+    className="md:ml-10 object-contain lg:mr-28  xxsm:flex"
+    src="../src/assets/aicanlogo.svg"
+    alt="Aican Logo"
+  />
+</div>
+
+          
+          <div className="hidden xsm:flex lg:ml-14 ">
             {items.map((item, i) => {
               return <NavBarExpansion  key={i} items={item} />;
             })}
@@ -118,7 +123,7 @@ function NavBar() {
           <Button
             
             rounded
-            className={`hidden lg:block md:mr-10 xsm:p-2 sm:p-3  md:text-lg sm:text-xs items-center px-3 py-1.5 border ${colors.buttonColor}  ${colors.textSecondary} rounded-lg`}
+            className={`hidden lg:block md:mr-10 xsm:p-2 sm:p-3  md:text-sm sm:text-xs items-center px-3 py-1.5 border ${colors.buttonColor} ${colors.borderGreenColor} ${colors.textSecondary} rounded-lg`}
           >
             Schedule a Demo
           </Button>
