@@ -24,7 +24,7 @@ function DropDown({ items }) {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col justify-center w-72">
-                <Link to={`/${Object.keys(item[0])}/${Object.keys(item[1])}`}>
+                <Link to={`/${Object.keys(item[0])}/${Object.keys(item[1]).toString().replace(" ","")}`}>
                   <p
                     className={`${colors.NavBarcolor} font-semibold text-base`}
                   >
@@ -41,7 +41,7 @@ function DropDown({ items }) {
               </div>
               <div className={`h-5`}></div>
               <div className="flex flex-col justify-center w-72">
-                <Link to={`/${Object.keys(item[0])}/${Object.keys(item[2])}`}>
+                <Link to={`/${Object.keys(item[0])}/${Object.keys(item[2]).toString().replace(" ","")}`}>
                   <p
                     className={`${colors.NavBarcolor} font-semibold text-base`}
                   >
@@ -59,7 +59,7 @@ function DropDown({ items }) {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col justify-center w-72">
-                <Link to={`/${Object.keys(item[0])}/${Object.keys(item[3])}`}>
+                <Link to={`/${Object.keys(item[0])}/${Object.keys(item[3]).toString().replace(" ","")}`}>
                   <p
                     className={`${colors.NavBarcolor} font-semibold text-base`}
                   >

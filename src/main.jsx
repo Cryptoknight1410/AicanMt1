@@ -10,6 +10,7 @@ import {
 import Automobile from './pages/Industries/Automobile.jsx'
 import Packaging from './pages/Industries/Packaging.jsx'
 import Pharmaeuticals from './pages/Industries/Pharmaeuticals.jsx'
+import Sme from './pages/Platforms/Sme.jsx'
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
     {
       path: "/industries/pharmaeuticals",
       element: <Pharmaeuticals></Pharmaeuticals>,
+      
+    },
+    {
+      path: "/platforms/aicansme",
+      element: <Sme></Sme>,
       
     },
   ]);
