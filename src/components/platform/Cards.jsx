@@ -83,10 +83,10 @@ function Cards() {
           </div>
         </div>
         
-
+w
 
         </div>
-{/* Khushi */}
+
         <div className=" items-center flex flex-col ">
           <hr className={`${colors.borderYellow} w-full my-6 md:mt-28`} />
           <div className="flex items-baseline justify-center ">

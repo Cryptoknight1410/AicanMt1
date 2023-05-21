@@ -24,7 +24,7 @@ function QandA() {
   </div>
   <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl ">
     <div className="w-full md:w-64">
-      <img src="./src/assets/sphere1.svg" alt="Card" className="object-contain mx-auto md:mx-0" />
+      <img src="./src/assets/cube.svg" alt="Card" className="object-contain mx-auto md:mx-0" />
     </div>
     <div className="flex items-center lg:mx-7 text-sm">
       <p className=" text-center md:text-left ">Struggling with frequent unplanned downtime and lacking visibility into machine issues?</p>
@@ -32,7 +32,7 @@ function QandA() {
   </div>
   <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl">
     <div className="w-full md:w-64">
-      <img src="./src/assets/sphere1.svg" alt="Card" className="object-contain mx-auto md:mx-0" />
+      <img src="./src/assets/stack.svg" alt="Card" className="object-contain mx-auto md:mx-0" />
     </div>
     <div className="flex items-center lg:mx-7 text-sm">
       <p className=" text-center md:text-left ">Struggling with frequent unplanned downtime and lacking visibility into machine issues?</p>
@@ -40,7 +40,7 @@ function QandA() {
   </div>
   <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl">
     <div className="w-full md:w-64">
-      <img src="./src/assets/sphere1.svg" alt="Card" className="object-contain mx-auto md:mx-0" />
+      <img src="./src/assets/sphere2.svg" alt="Card" className="object-contain mx-auto md:mx-0" />
     </div>
     <div className="flex items-center lg:mx-7 text-sm">
       <p className=" text-center md:text-left ">Struggling with frequent unplanned downtime and lacking visibility into machine issues?</p>

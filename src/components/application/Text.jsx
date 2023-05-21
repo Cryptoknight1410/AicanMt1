@@ -1,7 +1,7 @@
 import React from 'react'
 import Colors from '../../constants/colors'
 const colors=new Colors();
-function Text() {
+function    Text() {
   return (
     <div className={`w-full`}>
     <div className={`flex flex-col items-start `}>

@@ -3,7 +3,7 @@ import Colors from "../../constants/colors";
 import MobileView from "./MobileView";
 
 const colors = new Colors();
-function LeftTextRightImage({ text, img,width }) {
+function LeftTextRightImage({  img,width }) {
   return (
     <>
 
@@ -12,7 +12,7 @@ function LeftTextRightImage({ text, img,width }) {
       className={`hidden sm:flex ${width} mx-auto  justify-between   my-5 mb-32 items-center`}
       >
       <div className={` w-[40%]`}>
-        <p className={`text-sm`}>
+        <p className={`text-sm font-semibold`}>
           An automobile spare parts software is a type of computer program or
           application that is designed to help manage various aspects of the
           spare parts inventory and distribution process in the automobile

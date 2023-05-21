@@ -9,6 +9,7 @@ import Features from '../../components/platform/Features'
 import Data from '../../components/platform/Data'
 import Footer from '../../components/common/footer'
 import Seehowitworks from '../../components/common/seehowitworks'
+import Freedemo from '../../components/application/Freedemo'
 
 function Sme() {
   return (
@@ -17,6 +18,9 @@ function Sme() {
     <TopHeader></TopHeader>
     <NavBar></NavBar>
     <Hero></Hero>
+    <LeftCards></LeftCards>
+    <RightCards></RightCards>
+    <Freedemo></Freedemo>
     <LeftCards></LeftCards>
     <RightCards></RightCards>
     <LeftCards></LeftCards>

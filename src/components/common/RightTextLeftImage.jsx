@@ -10,7 +10,7 @@ function RightTextLeftImage({ text, img ,width}) {
       >
       <img className={` ${colors.card2} w-1/2 h-80`}></img>
       <div className={`w-[40%]`}>
-        <p className={`text-sm`}>
+        <p className={`text-sm font-semibold`}>
           An automobile spare parts software is a type of computer program or
           application that is designed to help manage various aspects of the
           spare parts inventory and distribution process in the automobile

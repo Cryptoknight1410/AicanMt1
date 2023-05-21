@@ -1,8 +1,9 @@
 import React from "react";
 import Colors from "../../../constants/colors";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import LeftTextRightImage from "../../common/LeftTextRightImage";
-import RightTextLeftImage from "../../common/RightTextLeftImage";
+
+import RTLI2 from "../../common/RTLI2";
+import LTRI2 from "../../common/LTRI2";
 const colors = new Colors();
 function Issues() {
   return (
@@ -23,42 +24,23 @@ function Issues() {
               Most commonly issues solved digitally
             </h2>
             <div className="text-left ">
-              <LeftTextRightImage
-                text={"Khush "}
-                img={"Lsi"}
-                width={"w-full"}
-              ></LeftTextRightImage>
+              <RTLI2></RTLI2>
             </div>
             <div className="text-left ">
-              <RightTextLeftImage
-                text={"Khush "}
-                img={"Lsi"}
-                width={"w-full"}
-              ></RightTextLeftImage>
+              <LTRI2></LTRI2>
             </div>
             <div className="text-left ">
-              <LeftTextRightImage
-                text={"Khush "}
-                img={"Lsi"}
-                width={"w-full"}
-              ></LeftTextRightImage>
-              
+              <RTLI2></RTLI2>
             </div>
             <div className="text-left ">
-              <RightTextLeftImage
-                text={"Khush "}
-                img={"Lsi"}
-                width={"w-full"}
-              ></RightTextLeftImage>
+              <LTRI2></LTRI2>
             </div>
             <div className="text-left ">
-              <LeftTextRightImage
-                text={"Khush "}
-                img={"Lsi"}
-                width={"w-full"}
-              ></LeftTextRightImage>
-              
+              <RTLI2></RTLI2>
             </div>
+            
+            </div>  
+          
           </div>
         </div>
 
@@ -76,7 +58,7 @@ function Issues() {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
 

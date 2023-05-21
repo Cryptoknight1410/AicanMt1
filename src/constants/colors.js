@@ -21,6 +21,7 @@ class Colors{
     Yellobackground="bg-[#FEFEDF]"
     textYellow="text-[#B3A100]"
     borderYellow="border-[#B3A100]"
+    grayText="text-[#C7C7C7]"
     
 }
 

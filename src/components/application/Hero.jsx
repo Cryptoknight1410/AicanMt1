@@ -5,7 +5,7 @@ const colors = new Colors();
 const RectangleComponent = () => {
   return (
     <>
-      <div className={`${colors.BgColor} pt-16 px-0 xsm:px-16 xl:h-[355px]`}>
+      <div className={`${colors.BgColor} pt-16 px-0 xsm:px-16 xl:h-[355px] `}>
         <div
           className={`flex flex-row xl:flex-nowrap flex-wrap justify-center xsm:justify-between`}
         >

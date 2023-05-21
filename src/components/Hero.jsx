@@ -8,17 +8,17 @@ function Hero() {
   return (
     <div className="lg:mt-20 xxsm:mt-3 z-10">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-lg xxsm:text-5xl  lg:text-6xl font-bold text-black text-center xxsm:mb-2">
+        <h1 className="text-lg xsm:text-5xl  lg:text-6xl font-bold text-black text-center xxsm:mb-2">
           Improved floor level visibility
         </h1>
         <div className="flex flex-wrap text-center justify-center ">
           <p
-            className={`text-lg xxsm:text-4xl lg:text-6xl font-bold text-black  text-center space-y-4 `}
+            className={`text-lg xsm:text-4xl lg:text-6xl font-bold text-black  text-center space-y-4 `}
           >
             to enhance &nbsp;
           </p>
           <span
-            className={`${colors.textPrimary} text-lg xxsm:text-4xl lg:text-6xl font-bold    text-center space-y-4`}
+            className={`${colors.textPrimary} text-lg xsm:text-4xl lg:text-6xl font-bold    text-center space-y-4`}
           >
             <TypewriterComponent
               options={{
@@ -50,7 +50,7 @@ function Hero() {
         >
           See how it Works
         </Button>
-        <div class="w-4/5 h-700 ">
+        <div class="w-full h-[200px] m-5 sm:h-auto xsm:w-4/5 ">
           <img
             src="./src/assets/HeroAssets.svg"
             class="w-full h-full object-cover"

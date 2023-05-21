@@ -11,7 +11,7 @@ import Footer from '../../components/common/footer'
 import NavBar from '../../components/common/NavBar'
 import Seehowitworks from '../../components/common/seehowitworks'
 import TopHeader from '../../components/common/TopHeader'
-
+import Partners from '../../components/common/Partners'
 
 
 function ErrorTracing() {
@@ -27,7 +27,9 @@ function ErrorTracing() {
         <RightCard2></RightCard2>
         <LeftCard2></LeftCard2>
         <Card2></Card2>
+        <Partners></Partners>
         <Seehowitworks text={"With AICAN, make data-driven decisions, drive efficiency, and unlock your manufacturing business's full potential. Seamlessly integrate with existing systems and scale as your business grows. Experience the power of complete tracking, real-time visibility, and actionable insights for enhanced operational efficiency."}></Seehowitworks>
+        
         <Footer></Footer>
     </div>
   )

@@ -4,7 +4,7 @@ import Button from '../common/Button';
 const colors=new Colors();
 function Freedemo() {
   return (
-    <div className="w-full flex flex-wrap xsm:flex-col items-center justify-center lg:mt-16 lg:mb-10">
+    <div className="w-full flex  flex-wrap xsm:flex-col items-center justify-center lg:mt-16 lg:mb-10">
       <div
         className={`${colors.bgPrimary} box-border lg:px-12 lg:py-24 xxsm:py-10 w-4/5  flex  rounded-3xl justify-around flex-wrap`}
       >   

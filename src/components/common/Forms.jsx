@@ -10,16 +10,16 @@ function Forms() {
         <div className={`flex-col flex`}>
           <h1
             className={`w-[65%]
-            ${colors.textSecondary} text-4xl`}
+            ${colors.textSecondary} text-4xl  font-semibold`}
           >
             YOUR FACTORY, OUR EXPERTISE
           </h1>
           <div className="h-5"></div>
-          <p className={`${colors.textSecondary} text-lg`}>
+          <p className={`${colors.textSecondary} text-base`}>
             Looking to jump start your digital transformation journey?
           </p>
           <div className="h-7"></div>
-          <p className={`${colors.textSecondary} text-lg w-full`}>
+          <p className={`${colors.textSecondary} text-base w-full`}>
             Our team of experts are ready to guide you through the process of
             implementing AICAN's cutting-edge solutions into your manufacturing
             processes. With a personalized approach and a focus on your specific
@@ -47,6 +47,7 @@ function Forms() {
               <p className={`mt-2 ${colors.textSecondary}`}>Ritwik Dhar</p>
               <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
             </div>
+            <img className="relative top-[-80px] " src="../src/assets/Hi.svg"></img>
           </div>
         </div>
       </div>
@@ -108,7 +109,6 @@ function Forms() {
           </div>
           <div className="h-5"></div>
           <button
-            
             className={` ${colors.textSecondary} font-bold py-2 px-4 rounded-xl block  focus:outline-none focus:shadow-outline w-full text-center ${colors.buttonColor}`}
           >
             Submit
