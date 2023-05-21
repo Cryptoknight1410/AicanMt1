@@ -9,7 +9,7 @@ function DropDown({ items }) {
         return (
           <div
             key={1}
-            className={` shadow-2xl flex flex-row flex-wrap justify-around w-full z-40 left-[-1px] ${colors.bgWhite} absolute mt-10 py-16 px-5`}
+            className={` shadow-2xl flex flex-row flex-wrap justify-around w-full z-50 left-[-1px] ${colors.bgWhite} absolute mt-10 py-16 px-5`}
           >
             <div className="flex flex-col justify-center w-72">
               <p className={`${colors.NavBarcolor} font-semibold text-base`}>

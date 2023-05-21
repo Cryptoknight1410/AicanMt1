@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import HomePage from './pages/HomePage';
 import WebFont from 'webfontloader';
-import Sme from './pages/Platforms/Sme';
-import ErrorTracing from './pages/Applications/ErrorTracing';
+
 
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   return (
     <div className='font-poppins'>
       
-    <ErrorTracing></ErrorTracing>
+    <HomePage></HomePage>
 
      </div>
   )

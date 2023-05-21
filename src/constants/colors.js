@@ -10,6 +10,7 @@ class Colors{
     headingColor='text-[#1A74E8]'
     borderBlueColor='border-[#1A74E8]'
     subheadingColor='text-[#0A2647]'
+    BgColor='bg-[#0A2647]'
     lightbluish="bg-[#E3E9F7]"
     borderWhite="border-white"
     card1="bg-[#EAFFE6]"

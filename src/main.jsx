@@ -11,6 +11,7 @@ import Automobile from './pages/Industries/Automobile.jsx'
 import Packaging from './pages/Industries/Packaging.jsx'
 import Pharmaeuticals from './pages/Industries/Pharmaeuticals.jsx'
 import Sme from './pages/Platforms/Sme.jsx'
+import ErrorTracing from './pages/Applications/ErrorTracing.jsx'
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
     {
       path: "/platforms/aicansme",
       element: <Sme></Sme>,
+      
+    },
+    {
+      path: "/application/ErrorTracing",
+      element: <ErrorTracing></ErrorTracing>,
       
     },
   ]);
