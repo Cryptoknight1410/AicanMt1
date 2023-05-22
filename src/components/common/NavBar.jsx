@@ -68,16 +68,16 @@ function NavBar() {
      },
     {
       Resources: [
-        {'Blogs':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
+        {
+          'OEE':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
+        },
         {
           'Case Studies':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
         },
         {
           'Calculators':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
         },
-        {
-          'OEE ':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
-        },
+        {'Blogs':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '},
         {
           'Downtime':'AICAN platforms bring the latest technology to fulfill the needs of production supervisors. '
         }

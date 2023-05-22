@@ -7,7 +7,7 @@ export default function Seehowitworks({ text }) {
   return (
     <div className="w-full flex flex-wrap xxsm:flex-row flex-col items-center justify-center lg:mt-16 lg:mb-10 mb-5">
       <div
-        className={`${colors.bgPrimary} box-border lg:px-12 lg:py-24 xxsm:py-10 w-4/5  flex rounded-3xl justify-around flex-wrap`}
+        className={`${colors.BgColor} box-border lg:px-12 lg:py-24 xxsm:py-10 w-4/5  flex rounded-3xl justify-around flex-wrap`}
       >
         <img
           src="../src/assets/database.svg"

@@ -11,6 +11,7 @@ import Features from "../components/Features";
 import Blogs from "../components/Blogs";
 import Footer from "../components/common/footer";
 import Forms from "../components/common/Forms";
+import Footer2 from "../components/common/footer2";
 function HomePage() {
   return (
     <>
@@ -35,8 +36,17 @@ function HomePage() {
       <Card2></Card2>
       <Forms></Forms>
       <Blogs></Blogs>
+      <div className="hidden xl:block  ">
+      <Footer2 absolute="absolute" top="top-[8100px]"></Footer2>
 
+      </div>
+      <div className="block xl:hidden">
       <Footer></Footer>
+
+      </div>
+      
+
+    
     </>
   );
 }

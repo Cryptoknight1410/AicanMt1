@@ -6,7 +6,7 @@ const colors = new Colors();
 function Hero() {
   return (
     <div>
-      <div className={`${colors.bgPrimary}`}>
+      <div className={`${colors.BgColor}`}>
         <div className={`flex flex-col justify-center items-center p-7`}>
           <h1 className={`${colors.textGreenColor2} font-bold text-3xl`}>
             Our Technology

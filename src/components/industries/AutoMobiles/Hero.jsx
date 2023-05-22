@@ -5,7 +5,7 @@ const colors = new Colors();
 function Hero() {
   return (
     <div
-      className={`flex flex-wrap w-full ${colors.bgPrimary} sm:p-16 p-0  justify-center box-border`}
+      className={`flex flex-wrap w-full ${colors.BgColor} sm:p-16 p-0  justify-center box-border`}
     >
       <div
         className={`flex flex-col w-full sm:w-[35%]  items-left  justify-center m-5`}

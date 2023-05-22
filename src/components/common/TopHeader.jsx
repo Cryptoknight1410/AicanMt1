@@ -5,7 +5,7 @@ function TopHeader() {
   return (
     <>
       <div
-        className={`${colors.bgPrimary} hidden h-12 sm:flex justify-between items-center font-medium`}
+        className={`${colors.BgColor} hidden h-12 sm:flex justify-between items-center font-medium`}
       >
         <div className={`${colors.textSecondary} ml-10  text-sm`}>
           Digitize your factory with a free demo now!

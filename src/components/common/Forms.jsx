@@ -5,7 +5,7 @@ function Forms() {
   return (
     <div class={`flex justify-center rounded-3xl md:my-28 my-5 `}>
       <div
-        className={`hidden md:block ${colors.bgPrimary} md:w-[50%] md:rounded-3xl md:ml-48 lg:pl-20 lg:pr-32 py-20`}
+        className={`hidden md:block ${colors.BgColor} md:w-[50%] md:rounded-3xl md:ml-48 lg:pl-20 lg:pr-32 py-20`}
       >
         <div className={`flex-col flex`}>
           <h1

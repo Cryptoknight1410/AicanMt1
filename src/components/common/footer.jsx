@@ -4,11 +4,11 @@ let colors = new Colors();
 function Footer() {
   return (
     <>
-      <div className={`${colors.bgPrimary} flex justify-around p-20`}>
+      <div className={`${colors.BgColor} flex justify-around p-20 `}>
         <div className={`flex flex-col ${colors.grayText}`}>
-          <div className="h-16 w-22 mb-7">
+          <div className="h-16 w-22 mb-7 z-40">
             <img
-              classname="w-full object-contain"
+              classname="w-full  object-contain"
               src="../src/assets/aicanlogo2.svg"
             ></img>
           </div>
@@ -41,7 +41,7 @@ function Footer() {
         </div>
         {/* 2nd column */}
         <div className={`hidden xsm:flex flex-col ${colors.grayText}`}>
-          <div className="h-16 w-22 justify-self-end lg:mb-7 text-white font-semibold pt-9">
+          <div className="h-16 w-22 justify-self-end lg:mb-7 text-white font-semibold pt-9 z-40">
             Products
           </div>
           <div className="text-sm">

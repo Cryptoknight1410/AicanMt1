@@ -42,8 +42,6 @@ function Issues() {
             </div>  
           
           </div>
-        </div>
-
         <div className=" items-center flex flex-col ">
           <hr className={`${colors.borderGreenColor} w-full my-6`} />
           <div className="flex items-baseline justify-center ">
@@ -57,6 +55,8 @@ function Issues() {
             />
           </div>
         </div>
+        </div>
+
       </div>
     
   );

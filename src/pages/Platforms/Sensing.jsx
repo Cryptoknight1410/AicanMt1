@@ -26,10 +26,8 @@ function Sensing() {
     <LeftCards></LeftCards>
     <RightCards></RightCards>
     <LeftCards></LeftCards>
-    <RightCards></RightCards>
-    <LeftCards></LeftCards>
-    <Features></Features>
-    <LeftCards></LeftCards>
+    
+
     <Cards></Cards>
 
     <Seehowitworks text={"With AICAN, make data-driven decisions, drive efficiency, and unlock your manufacturing business's full potential. Seamlessly integrate with existing systems and scale as your business grows. Experience the power of complete tracking, real-time visibility, and actionable insights for enhanced operational efficiency."}></Seehowitworks>

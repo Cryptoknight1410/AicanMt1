@@ -13,6 +13,10 @@ import Sensing from "./pages/Platforms/Sensing.jsx";
 import ErrorTracing from "./pages/Applications/ErrorTracing.jsx";
 import Micro from "./pages/Platforms/Micro.jsx";
 import IOT from "./pages/Platforms/IOT.jsx";
+import Inventory from "./pages/Applications/Inventory";
+import MachineHealth from "./pages/Applications/MachineHealth";
+import WorkerAnalytics from "./pages/Applications/WorkerAnalytics";
+import Blogs from "./pages/Resources/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +59,22 @@ const router = createBrowserRouter([
   {
     path: "/application/ErrorTracing",
     element: <ErrorTracing></ErrorTracing>,
+  },
+  {
+    path: "/application/Inventory",
+    element: <Inventory></Inventory>,
+  },
+  {
+    path: "/application/MachineHealth",
+    element: <MachineHealth></MachineHealth>,
+  },
+  {
+    path: "/application/WorkerAnalytics",
+    element: <WorkerAnalytics></WorkerAnalytics>,
+  },
+  {
+    path: "/OEE/blogs",
+    element: <Blogs></Blogs>,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
