@@ -21,14 +21,14 @@ function HomePage() {
       <Seehowitworks
         text={
           "Optimize your factory floor operations with AICAN's SaaS platform. Gain real-time visibility into worker performance, work timings, and analyze productivity. Trace errors for root cause analysis and monitor cycle times and micro  stops for all machines."
-        }
+        } button={"See how it works"}
       ></Seehowitworks>
       <Technology></Technology>
       <QandA></QandA>
       <Seehowitworks
         text={
-          "With AICAN, make data-driven decisions, drive efficiency, and unlock your manufacturing business's full potential. Seamlessly integrate with existing systems and scale as your business grows. Experience the power of complete tracking, real-time visibility, and actionable insights for enhanced operational efficiency."
-        }
+          "By tracking and analyzing real-time data related to machine performance and worker activities, we empower you to quickly pinpoint the sources of errors, take immediate corrective actions, and continuously improve your manufacturing processes. Discover the power of our platform to unlock new levels of efficiency and profitability for your business."
+        } button={"Learn More"}
       ></Seehowitworks>
 
       <Card1></Card1>
@@ -36,14 +36,10 @@ function HomePage() {
       <Card2></Card2>
       <Forms></Forms>
       <Blogs></Blogs>
-      <div className="hidden xl:block  ">
-      <Footer2 absolute="absolute" top="top-[8100px]"></Footer2>
-
-      </div>
-      <div className="block xl:hidden">
+     
+  
       <Footer></Footer>
 
-      </div>
       
 
     

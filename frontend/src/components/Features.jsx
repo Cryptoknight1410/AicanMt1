@@ -28,8 +28,8 @@ function Features() {
     "Ground Level Deployment",
   ];
   return (
-    <div className="bg-black mx-auto sm:w-4/5 w-fit rounded-3xl mt-14 md:mb-[350px] h-[900px]">
-      <div className="object-cover w-full mx-auto h-[900px] bg-[url('../src/assets/Features.svg')] flex justify-center text-center">
+    <div className="bg-black mx-auto w-4/5  rounded-3xl mt-14 md:mb-[350px] h-[900px] box-border ">
+      <div className="object-cover  mx-auto h-[900px] bg-[url('../src/assets/Features.svg')] flex justify-center bg-no-repeat text-center  ]">
         <div className={` ${colors.textSecondary} flex flex-col py-16`}>
           <div>FEATURES</div>
           <h1 className={`font-semibold text-xl md:text-4xl w-[60%]  mx-auto`}>

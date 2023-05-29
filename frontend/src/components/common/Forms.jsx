@@ -3,9 +3,9 @@ import Colors from "../../constants/colors";
 let colors = new Colors();
 function Forms() {
   return (
-    <div class={`flex justify-center rounded-3xl md:my-28 my-5 `}>
+    <div class={`flex   rounded-3xl md:my-28 my-5 `}>
       <div
-        className={`hidden md:block ${colors.BgColor} md:w-[50%] md:rounded-3xl md:ml-48 lg:pl-20 lg:pr-32 py-20`}
+        className={`hidden md:block ${colors.BgColor} md:w-[60%] md:rounded-3xl md:ml-[60px] lg:pl-20 lg:pr-32 py-20`}
       >
         <div className={`flex-col flex`}>
           <h1
@@ -51,8 +51,11 @@ function Forms() {
           </div>
         </div>
       </div>
+
+
+      
       <div
-        className={`${colors.card1} w-4/5  md:w-2/5 my-10 h-[50%] relative md:right-28 rounded-3xl md:px-32   py-10 px-5`}
+        className={`${colors.card1} w-4/5  md:w-2/5 my-10 h-[50%] relative md:right-[60px] rounded-3xl md:px-32 py-10 px-5`}
       >
         <h2 class="text-xl md:text-5xl font-bold mb-4 text-center lg:text-left">
           Talk to our <span class="text-green-700">Experts</span>

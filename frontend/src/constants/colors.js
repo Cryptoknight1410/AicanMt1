@@ -22,6 +22,7 @@ class Colors{
     textYellow="text-[#B3A100]"
     borderYellow="border-[#B3A100]"
     grayText="text-[#C7C7C7]"
+    text3="text-[#231F20]"
     
 }
 

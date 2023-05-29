@@ -5,18 +5,18 @@ let colors = new Colors();
 function Card2() {
   return (
     <div className="flex flex-col justify-center items-center mt-16">
-      <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-4/5 box-border p-5 ${colors.card2}` }>
+      <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-[92%] box-border p-5 ${colors.card2}` }>
         <div className="p-8 flex flex-col md:flex-row items-center justify-center">
-          <div className="max-w-2xl mx-auto text-center md:text-left">
+          <div className="max-w-3xl mx-auto text-center md:text-left">
             <div className="px-6 py-4 text-center">
               <h3 className={`${colors.headingColor} text-lg font-bold`}>
                 THREE STEP DEPLOYMENT
               </h3>
               <div className="h-4"></div>
 
-              <h2 className={`text-lg lg:text-4xl sm:text-lg font-bold  ${colors.subheadingColor}`}>
+              <p className={`text-lg lg:text-5xl ${colors.subheadingColor} sm:text-lg font-bold leading-9 `}>
                 Going digital has never been easier!
-              </h2>
+              </p>
             </div>
           </div>
         </div>
@@ -52,10 +52,10 @@ function Card2() {
         </div>
 
         <div className=" items-center flex flex-col ">
-          <hr className={`${colors.borderTomotoColor} w-full my-6`} />
+          <hr className={`${colors.borderTomotoColor} w-full my-6 mt-20`} />
           <div className="flex items-baseline justify-center ">
             <h3
-              className={`text-sm my-3 sm:text-base lg:text-base ${colors.textTomotoColor} font-semibold text-center cursor-pointer`}
+              className={`text-sm my-3 sm:text-base lg:text-base ${colors.textTomotoColor} font-semibold text-center cursor-pointer tracking-[0.5em] `}
             >
               START YOUR TRANSFORMATION NOW
             </h3>

@@ -42,44 +42,38 @@ function Footer() {
         {/* 2nd column */}
         <div className={`hidden xsm:flex flex-col ${colors.grayText}`}>
           <div className="h-16 w-22 justify-self-end lg:mb-7 text-white font-semibold pt-9 z-40">
-            Products
+            Features
           </div>
           <div className="text-sm">
-          <p className=" w-64 mt-1">How it Works</p>
-          <p className=" w-64 mt-1">Watch a Demo</p>
-          <p className=" w-64 mt-1">Plans And Pricing</p>
-          <p className=" w-64 mt-1">Analytics</p>
-          <p className=" w-64 mt-1">Mobile App</p>
-          <p className=" w-64 mt-1">Predictive Maintainence </p>
-          <p className=" w-64 mt-1">Integration </p>
+          <p className=" w-64 mt-1 leading-loose">Error Tracing </p>
+          <p className=" w-64 mt-1 leading-loose">Worker Analytics</p>
+          <p className=" w-64 mt-1 leading-loose">Machine Health</p>
+          <p className=" w-64 mt-1 leading-loose">Inventory Management</p>
+         
            </div> 
         </div>
         <div className={`hidden xsm:flex flex-col ${colors.grayText}`}>
           <div className="h-16 w-22 justify-self-end lg:mb-7 text-white font-semibold pt-9">
-            Products
+            Industries
           </div>
           <div className="text-sm">
-          <p className=" w-64 mt-1">How it Works</p>
-          <p className=" w-64 mt-1">Watch a Demo</p>
-          <p className=" w-64 mt-1">Plans And Pricing</p>
-          <p className=" w-64 mt-1">Analytics</p>
-          <p className=" w-64 mt-1">Mobile App</p>
-          <p className=" w-64 mt-1">Predictive Maintainence </p>
-          <p className=" w-64 mt-1">Integration </p>
+          <p className=" w-64 mt-1 leading-loose">Automobile</p>
+          <p className=" w-64 mt-1 leading-loose">Electronics</p>
+          <p className=" w-64 mt-1 leading-loose">Packaging</p>
+          <p className=" w-64 mt-1 leading-loose">Pharmaceticals</p>
+          
            </div> 
         </div>
         <div className={`hidden xsm:flex flex-col ${colors.grayText}`}>
           <div className="h-16 w-22 justify-self-end lg:mb-7 text-white font-semibold pt-9">
-            Products
+            Resources
           </div>
           <div className="text-sm">
-          <p className=" w-64 mt-1">How it Works</p>
-          <p className=" w-64 mt-1">Watch a Demo</p>
-          <p className=" w-64 mt-1">Plans And Pricing</p>
-          <p className=" w-64 mt-1">Analytics</p>
-          <p className=" w-64 mt-1">Mobile App</p>
-          <p className=" w-64 mt-1">Predictive Maintainence </p>
-          <p className=" w-64 mt-1">Integration </p>
+          <p className=" w-64 mt-1 leading-loose">Blogs</p>
+          <p className=" w-64 mt-1 leading-loose">Case Study</p>
+          <p className=" w-64 mt-1 leading-loose">Calculators</p>
+          <p className=" w-64 mt-1 leading-loose">OEE Calculator</p>
+          
            </div> 
         </div>
 

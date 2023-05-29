@@ -120,13 +120,13 @@ function NavBar() {
           </div>
         </div>
         <div className="flex justify-around items-center">
-          <Button
+          {/* <Button
             
             rounded
             className={`hidden lg:block md:mr-10 xsm:p-2 sm:p-3  md:text-sm sm:text-xs items-center px-3 py-1.5 border ${colors.buttonColor} ${colors.borderGreenColor} ${colors.textSecondary} rounded-lg`}
           >
             Schedule a Demo
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
