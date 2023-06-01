@@ -3,8 +3,8 @@ import Colors from "../constants/colors";
 function QandA() {
   const colors = new Colors();
   return (
-    <div className="flex flex-col justify-center items-center  mb-[120px]">
-      <div className="flex flex-col justify-center items-center my-16">
+    <div className="flex flex-col justify-center items-center mt-5 md:mb-[120px]">
+      <div className="flex flex-col justify-center items-center  md:my-[100px]">
         <h3
           className={`${colors.headingColor}  text-xl text-center font-semibold`}
         >
@@ -19,7 +19,7 @@ function QandA() {
       <div className=" w-[92%] ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 my-10 items-center mx-auto justify-center">
          
-          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl h-[170px]">
+          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl md:h-[170px]">
             <div className="w-full md:w-64 ">
               <img
                 src="./src/assets/sphere1.svg"
@@ -34,7 +34,7 @@ function QandA() {
               </p>
             </div>
           </div>
-          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl  h-[170px]">
+          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl  md:h-[170px]">
             <div className="w-full md:w-64">
               <img
                 src="./src/assets/cube.svg"
@@ -49,7 +49,7 @@ function QandA() {
               </p>
             </div>
           </div>
-          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl  h-[170px]">
+          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl md:h-[170px]">
             <div className="w-full md:w-64">
               <img
                 src="./src/assets/stack.svg"
@@ -64,7 +64,7 @@ function QandA() {
               </p>
             </div>
           </div>
-          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl  h-[170px]">
+          <div className="bg-[#F5E3F7] flex flex-col md:flex-row items-center rounded-3xl  md:h-[170px]">
             <div className="w-full md:w-64">
               <img
                 src="./src/assets/sphere2.svg"

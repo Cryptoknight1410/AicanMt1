@@ -4,12 +4,12 @@ import Colors from "../constants/colors";
 let colors = new Colors();
 function Card1() {
   return (
-    <div className="flex flex-col justify-center items-center mt-[120px] ">
+    <div className="flex flex-col justify-center items-center my-10 md:my-[150px] ">
       <div
         className={`${colors.card1} p-5 flex-col flex my-9 rounded-3xl w-[92%] box-border`}
       >
-        <div className="px-8 pt-8 flex flex-col md:flex-row items-center justify-center flex-wrap">
-          <div className="px-6  text-center  w-[90%] ">
+        <div className="p-1 md:p-8 flex flex-col md:flex-row items-center justify-center flex-wrap">
+          <div className="px-2 md:px-6  text-center  w-[90%] ">
             <h3 className={`${colors.headingColor}  text-base font-bold mt-7`}>
               OPTIMUM EFFICIENCY, OPTIMUM ROI
             </h3>
@@ -21,7 +21,7 @@ function Card1() {
               Reduce Operational Costs by 25%
             </h2>
             <p
-              className={`${colors.subheadingColor} text-[20px]  text-center font-medium`}
+              className={`${colors.subheadingColor} md:text-[20px]  text-center font-medium`}
             >
               Experience the transformative power of AICAN and witness a rapid
               return on investment, with the potential to achieve a 25%
@@ -61,7 +61,7 @@ function Card1() {
             >
               35%
             </div>
-            <div className="w-52 lg:text-base text-sm text-center font-medium">
+            <div className="w-52 lg:text-base text-base text-center font-medium">
               Increase in on-time order fulfillment with error detection on
               ground level
             </div>

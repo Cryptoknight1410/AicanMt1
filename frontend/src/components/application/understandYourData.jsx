@@ -4,7 +4,7 @@ const colors = new Colors();
 function UnderstandYourData() {
   return (
     <div
-      className={`flex z-50 xl:mt-60 cursor-pointer flex-col items-center  ${colors.textGreenColor2} font-semibold text-2xl mt-5`}
+      className={`flex z-50 xl:mt-[350px] cursor-pointer flex-col items-center  ${colors.textGreenColor2} font-semibold text-2xl mt-10`}
     >
       <div className={`text-3xl`}>Understand Your Data</div>
       <div className="h-5"></div>

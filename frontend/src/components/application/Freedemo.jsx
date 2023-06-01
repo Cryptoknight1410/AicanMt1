@@ -6,7 +6,7 @@ function Freedemo() {
   return (
     <div className="w-full flex  flex-wrap xsm:flex-col items-center justify-center lg:mt-16 lg:mb-10">
       <div
-        className={`${colors.BgColor} box-border lg:px-12 lg:py-24 xxsm:py-10 w-4/5  flex  rounded-3xl justify-around flex-wrap`}
+        className={`${colors.BgColor} box-border lg:px-12 lg:py-24 xxsm:py-10 w-[92%]  flex  rounded-3xl justify-around flex-wrap`}
       >   
 
       <div className={`flex-col flex`}>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { AiOutlineDown, AiOutlineDownSquare } from "react-icons/all";
+import { AiOutlineDown } from "react-icons/all";
 import DropDown from "./DropDown";
 function NavBarExpansion({ items }) {
   

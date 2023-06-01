@@ -4,7 +4,7 @@ import Colors from "../constants/colors";
 let colors = new Colors();
 function Card2() {
   return (
-    <div className="flex flex-col justify-center items-center mt-16">
+    <div className="flex flex-col justify-center items-center md:mt-[430px] ">
       <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-[92%] box-border p-5 ${colors.card2}` }>
         <div className="p-8 flex flex-col md:flex-row items-center justify-center">
           <div className="max-w-3xl mx-auto text-center md:text-left">

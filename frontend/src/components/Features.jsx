@@ -28,17 +28,19 @@ function Features() {
     "Ground Level Deployment",
   ];
   return (
-    <div className="bg-black mx-auto w-4/5  rounded-3xl mt-14 md:mb-[350px] h-[900px] box-border ">
-      <div className="object-cover  mx-auto h-[900px] bg-[url('../src/assets/Features.svg')] flex justify-center bg-no-repeat text-center  ]">
-        <div className={` ${colors.textSecondary} flex flex-col py-16`}>
-          <div>FEATURES</div>
-          <h1 className={`font-semibold text-xl md:text-4xl w-[60%]  mx-auto`}>
+    <div className="bg-black  w-[92%] flex mx-auto rounded-3xl mt-14 md:mb-[350px] h-[900px] box-border ">
+      <div className="w-full">
+
+      <div className="h-[900px] bg-[url('../src/assets/Features.svg')] flex mx-auto  justify-center bg-cover text-center]">
+        <div className={` ${colors.textSecondary} flex flex-col py-16 text-center`}>
+          <div className="text-center">FEATURES</div>
+          <h1 className={`font-semibold text-xl md:text-4xl w-[60%]  mx-auto` }>
             Powerful Tool to Solve Your Toughest Challenges
           </h1>
 
           <div
             className={`flex xsm:flex-row w-full text-center flex-col  xsm:flex-wrap h-[40%] xxsm:p-5 xsm:justify-between xsm:text-left  mt-20 mx-auto`}
-          >
+            >
             <div className={`flex flex-col h-full  justify-between  `}>
               {items1.map((items) => {
                 return (
@@ -46,7 +48,7 @@ function Features() {
                     <img
                       src="./src/assets/tickMark.svg"
                       className="mr-2 mb-2"
-                    />
+                      />
                     {items}
                   </div>
                 );
@@ -59,7 +61,7 @@ function Features() {
                     <img
                       src="./src/assets/tickMark.svg"
                       className="mr-2 mb-2"
-                    />
+                      />
                     {items}
                   </div>
                 );
@@ -72,7 +74,7 @@ function Features() {
                     <img
                       src="./src/assets/tickMark.svg"
                       className="mr-2 mb-2 "
-                    />
+                      />
                     {items}
                   </div>
                 );
@@ -86,6 +88,7 @@ function Features() {
         <img src="./src/assets/SIngleHero.svg" className="object-contain"></img>
       </div>
     </div>
+              </div>
   );
 }
 

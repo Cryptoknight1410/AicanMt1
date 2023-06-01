@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Colors from "../../constants/colors";
 let colors = new Colors();
 function Footer() {
@@ -12,7 +13,7 @@ function Footer() {
               src="../src/assets/aicanlogo2.svg"
             ></img>
           </div>
-          <p className={` w-64 text-sm ${colors.grayText}`}>
+          <p className={` w-64 text-sm mt-9 ${colors.grayText}`}>
             18th floor Zone Startup India, Bombay Stock Exchange PJ Towers,
             Dalal Street-400001
           </p>
@@ -45,10 +46,12 @@ function Footer() {
             Features
           </div>
           <div className="text-sm">
-          <p className=" w-64 mt-1 leading-loose">Error Tracing </p>
-          <p className=" w-64 mt-1 leading-loose">Worker Analytics</p>
-          <p className=" w-64 mt-1 leading-loose">Machine Health</p>
-          <p className=" w-64 mt-1 leading-loose">Inventory Management</p>
+            <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Error Tracing </p></a>
+            <a href="/Application/WorkerAnalytics"><p className=" w-64 mt-1 leading-loose mb-3">Worker Analytics </p></a>
+            <a href="/Application/Inventory"><p className=" w-64 mt-1 leading-loose mb-3">Inventory </p></a>
+            <a href="/Application/MachineHealth"><p className=" w-64 mt-1 leading-loose mb-3">Machine Health </p></a>
+          
+          
          
            </div> 
         </div>
@@ -57,10 +60,10 @@ function Footer() {
             Industries
           </div>
           <div className="text-sm">
-          <p className=" w-64 mt-1 leading-loose">Automobile</p>
-          <p className=" w-64 mt-1 leading-loose">Electronics</p>
-          <p className=" w-64 mt-1 leading-loose">Packaging</p>
-          <p className=" w-64 mt-1 leading-loose">Pharmaceticals</p>
+          <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Automobile </p></a>
+          <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Packaging </p></a>
+          <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Electronics </p></a>
+          <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Pharmaeuticals </p></a>
           
            </div> 
         </div>
@@ -69,11 +72,10 @@ function Footer() {
             Resources
           </div>
           <div className="text-sm">
-          <p className=" w-64 mt-1 leading-loose">Blogs</p>
-          <p className=" w-64 mt-1 leading-loose">Case Study</p>
-          <p className=" w-64 mt-1 leading-loose">Calculators</p>
-          <p className=" w-64 mt-1 leading-loose">OEE Calculator</p>
-          
+          <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Blogs </p></a> 
+          <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Case Studies </p></a>
+           <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">Calculators </p></a>
+           <a href="/Application/ErrorTracing"><p className=" w-64 mt-1 leading-loose mb-3">OEE Calculators </p></a>
            </div> 
         </div>
 

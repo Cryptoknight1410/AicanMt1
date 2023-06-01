@@ -15,35 +15,37 @@ function Technology() {
         TECHNOLOGY ARCHITECTURE
       </h3>
       <h1
-        className={`sm:text-lg ${colors.subheadingColor} lg:text-4xl font-bold text-center mb-2 w-[60%] md:w-[60%]`}
+        className={`sm:text-lg ${colors.subheadingColor} lg:text-4xl font-bold text-center  w-[60%] md:w-[60%]`}
         >
         Everything about your factory - all on a single screen
       </h1>
+      <div className="h-0 md:h-10"></div>
         </div>
       <div
-        className={`${colors.lightbluish} flex-col flex mb-9 mt-9 rounded-3xl w-[92%]  box-border p-5`}
+        className={`${colors.lightbluish} flex-col flex my-9  rounded-3xl w-[92%]  box-border p-5`}
       >
         <div className=" px-8 flex flex-col md:flex-row items-center justify-center">
           <div className="w-full md:w-1/2 md:text-center mb-6 md:mb-0">
             <img
               src="./src/assets/Group_80_1.png"
               alt="Example Image"
-              className="mx-auto object-contain"
+              className="mx-auto object-contain min-h-[50%]" 
             />
           </div>
           <div className="max-w-2xl mx-auto text-center md:text-left ">
-            <div className="px-10 py-4">
+            <div className="sm:px-10 sm:py-4">
               <div
-                className={`text-lg lg:text-4xl ${colors.subheadingColor} sm:text-lg font-bold mb-16 mt-[40px] w-[75%]`}
+                className={`text-lg lg:text-4xl ${colors.subheadingColor} text-center md:text-left sm:text-lg font-bold mb-16 mt-[40px] w-full`}
               >
                <p className=""> Accelerate your <br></br> Digital Transformation</p>
               </div>
-              <p className=" lg:text-base sm:text-base  text-justify ">
+              <p className=" text-center sm:text-base  sm:text-justify ">
                 Embark on your digital transformation journey with AICAN's
                 game-changing SaaS platform.
               </p>
               <div className="h-5"></div>
-              <p className="lg:text-base sm:text-base text-justify">
+              
+              <p className=" sm:text-base  texte-center sm:text-justify">
                 Designed by manufacturing experts, it empowers you to embrace
                 the future of manufacturing. Seamlessly access the platform via
                 web and mobile apps, leverage cutting-edge modular sensor
@@ -51,7 +53,7 @@ function Technology() {
                 efficiency.
               </p>
               <div className="h-5"></div>
-              <p className="lg:text-base sm:text-base mb-[40px] text-justify">
+              <p className="text-center sm:text-base mb-[40px] sm:text-justify">
                 Let AICAN be your partner on the path to digital transformation
                 and drive your business forward.
               </p>

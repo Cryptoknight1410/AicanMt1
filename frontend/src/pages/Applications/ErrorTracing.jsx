@@ -12,22 +12,31 @@ import NavBar from '../../components/common/NavBar'
 import Seehowitworks from '../../components/common/seehowitworks'
 import TopHeader from '../../components/common/TopHeader'
 import Partners from '../../components/common/Partners'
-
+import Colors from '../../constants/colors'
+const colors=new Colors()
 
 function ErrorTracing() {
   return (
     <div>
         <TopHeader></TopHeader>
         <NavBar></NavBar>
-        <RectangleComponent></RectangleComponent>
+        <RectangleComponent header="Error Tracing"
+        content="With our advanced tracking capabilities, we provide comprehensive data-driven insights that enable you to locate the exact source of errors, minimize downtime, and optimize your manufacturingprocesses for improved efficiency."
+        image="../src/assets/Applications/ErrorTracing.svg"
+        ></RectangleComponent>
         <UnderstandYourData></UnderstandYourData>
-        <RightCard></RightCard>
+        <h3
+        className={`${colors.headingColor}  text-sm w-[92%] mx-auto pt-10 font-bold `}
+        >
+        THREE STEP DEPLOYMENT
+      </h3>
+        <RightCard image="../src/assets/Applications/hammer.svg"></RightCard>
         <LeftCard></LeftCard>
         <Freedemo></Freedemo>
         <RightCard2></RightCard2>
         <LeftCard2></LeftCard2>
         <Card2></Card2>
-        <Partners></Partners>
+        
         <Seehowitworks text={"With AICAN, make data-driven decisions, drive efficiency, and unlock your manufacturing business's full potential. Seamlessly integrate with existing systems and scale as your business grows. Experience the power of complete tracking, real-time visibility, and actionable insights for enhanced operational efficiency."}></Seehowitworks>
         
         <Footer></Footer>
