@@ -1,31 +1,20 @@
 import express from "express";
-import mongoose, { Schema } from "mongoose";
+import Connection from "../backend/connection.js";
+import dotenv from "dotenv";
+import cors from 'cors';
+import calling from "./routes/route.js";
+
+dotenv.config();
+const USERNAME = process.env.DB_USERNAME;
+const PASSWORD = process.env.DB_PASSWORD;
 
 const PORT = 5000;
 const app = express();
+app.use(cors());
 app.listen(PORT, () => {
   console.log(`Server Started on Port ${PORT}`);
 });
-mongoose
-  .connect("mongodb+srv://khushisanghvi940:1410@cluster.d2wmtdc.mongodb.net/AtlasMt1", {
-  
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Connection Successfull");
-  }).catch((err)=>{
-        console.log(err);
-  });
 
+Connection(USERNAME, PASSWORD);
 
-const blogs =Schema({
-  Name:String,
-  content:String,
-  image:String,
-})
-
-app.get("/blogs",(req,res)=>{
-    // res.send("Hello Everyone");
-    res.send(req.params);
-})
+calling(app);
