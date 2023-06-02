@@ -6,13 +6,13 @@ function Freedemo() {
   return (
     <div className="w-full flex  flex-wrap xsm:flex-col items-center justify-center lg:mt-16 lg:mb-10">
       <div
-        className={`${colors.BgColor} box-border lg:px-12 lg:py-24 xxsm:py-10 w-[92%]  flex  rounded-3xl justify-around flex-wrap`}
+        className={`${colors.BgColor} box-border lg:px-44 lg:py-24 xxsm:py-10 w-[92%]  flex  rounded-3xl justify-between flex-wrap`}
       >   
 
       <div className={`flex-col flex`}>
-        <h1 className={`${colors.textGreenColor2} lg:text-lg
+        <h1 className={`${colors.textGreenColor2} lg:text-3xl
           sm:text-2xl  text-sm font-bold  overflow-hidden my-3`}>WATCH THE FREE DEMO</h1>
-        <h1 className={`${colors.textSecondary} lg:text-lg
+        <h1 className={`${colors.textSecondary} lg:text-3xl
           sm:text-2xl  text-sm font-bold  overflow-hidden my-3`}>Learn More About Mingo.</h1>
         </div>  
 
@@ -20,7 +20,7 @@ function Freedemo() {
           
           rounded
           className={` ${colors.buttonColor} ${colors.textSecondary} text-sm
-         px-3 py-2  md:px-5 md:py-3 my-5 lg:text-lg self-center border ${colors.borderGreenColor  } text-center`}
+         px-3 py-2  md:px-10 md:py-3 my-5 lg:text-lg self-center border ${colors.borderGreenColor  } text-center`}
         >
           Get Demo
         </Button>

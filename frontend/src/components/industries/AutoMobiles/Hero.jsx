@@ -10,11 +10,11 @@ function Hero() {
       <div
         className={`flex flex-col w-full sm:w-[35%]  items-left  justify-center m-5`}
       >
-        <h1 className={`${colors.textGreenColor2} font-semibold text-lg mb-3`}>
+        <h1 className={`${colors.textGreenColor2} font-bold text-3xl mb-3`}>
           AUTOMOTIVE SOFTWARE
         </h1>
         <h1
-          className={`${colors.textSecondary} font-semibold text-sm md:text-2xl w-52  mb-3   `}
+          className={`${colors.textSecondary} font-semibold text-sm md:text-4xl w-[60%]  mb-3   `}
         >
           INCREASE EFFICIENCY IN AUTOMOTIVE MANUFACTURING
         </h1>
@@ -26,13 +26,13 @@ function Hero() {
         <div className="h-10"></div>
 
         <button
-          className={`${colors.buttonColor} ${colors.textSecondary} rounded-lg sm:w-44  w-36 text-center p-2`}
+          className={`${colors.buttonColor} ${colors.textSecondary} rounded-lg sm:w-44  w-36 text-center px-2 py-3`}
         >
           Watch Demo
         </button>
       </div>
 
-      <img className={`h-80 ${colors.card2} w-full sm:w-1/2 m-5 `}></img>
+      <img src="../src/assets/Industries/automobile.svg" className={`h-80  w-full sm:w-1/2 m-5 `}></img>
     </div>
   );
 }

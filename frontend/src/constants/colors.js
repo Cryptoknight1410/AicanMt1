@@ -14,6 +14,7 @@ class Colors{
     lightbluish="bg-[#E3E9F7]"
     borderWhite="border-white"
     card1="bg-[#EAFFE6]"
+    forms="bg-[#F9F9F9]"
     card2="bg-[#FFF1EE]"
     textTomotoColor="text-[#F75402]"
     borderTomotoColor="border-[#F75402]"

@@ -15,7 +15,7 @@ const RectangleComponent = ({ header, content, image }) => {
             <div className={`${colors.textSecondary} font-semibold text-4xl`}>
               {header}
             </div>
-            <p className={`${colors.textSecondary} w-[65%] pt-10`}>{content}</p>
+            <p className={`${colors.textSecondary} w-[80%] pt-10 z-[50]`}>{content}</p>
             <div className="flex pt-5 z-10  w-1/2 mb-5 xl:mb-0">
               <Button
                 className={`${colors.textSecondary} ${colors.buttonColor} ${colors.borderGreenColor} xsm:px-5 xsm:py-2 py-1 mr-3 rounded-lg`}

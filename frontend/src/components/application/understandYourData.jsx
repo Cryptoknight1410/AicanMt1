@@ -1,14 +1,14 @@
 import React from "react";
 import Colors from "../../constants/colors";
 const colors = new Colors();
-function UnderstandYourData() {
+function UnderstandYourData({title,subheading}) {
   return (
     <div
-      className={`flex z-50 xl:mt-[350px] cursor-pointer flex-col items-center  ${colors.textGreenColor2} font-semibold text-2xl mt-10`}
+      className={`flex z-50 xl:mt-[350px] md:mb-24   cursor-pointer flex-col items-center  ${colors.textGreenColor2} font-semibold text-2xl mt-10`}
     >
-      <div className={`text-3xl`}>Understand Your Data</div>
+      <div className={`md:text-3xl font-bold`}>{title}</div>
       <div className="h-5"></div>
-      <div className={`text-5xl ${colors.subheadingColor } font-bold`}>Visual Management</div>
+      <div className={`md:text-5xl w-1/2 text-center ${colors.subheadingColor } font-bold`}>{subheading}</div>
     </div>
   );
 }

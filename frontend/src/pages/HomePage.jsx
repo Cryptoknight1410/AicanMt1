@@ -36,7 +36,7 @@ function HomePage() {
 
       <Card1></Card1>
       <Features></Features>
-      <Card2></Card2>
+      <Card2 margin="mt-[430px]"></Card2>
       <Forms></Forms>
       <Blogs></Blogs>
 

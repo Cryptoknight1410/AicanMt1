@@ -7,13 +7,13 @@ function Blogs() {
       <img className={` ${h} w-60 rounded-lg" src={image}`}  />
 
       <div className="pt-1">
-        <h4 className="text-xl font-medium w-[60%] ">{title}</h4>
+        <h4 className={`text-xl font-bold w-[60%] ${colors.subheadingColor}`}>{title}</h4>
         <div className="flex flex-row justify-between w-48">
-          <h1 className="text-xs">Aican Team</h1>
-          <h1 className="text-xs">3 min Read</h1>
+          <h1 className="text-xs text-[#4C4C4C]">Aican Team</h1>
+          <h1 className="text-xs text-[#4C4C4C]">3 min Read</h1>
         </div>
 
-        <p className="mt-1 w-[80%] text-xs ">{subtitle}</p>
+        <p className={`mt-1 w-[80%] text-xs ${colors.subheadingColor} font-medium`}>{subtitle}</p>
         <a
           href="#"
           className={` ${colors.textGreenColor2} text-xs inline-block`}
@@ -33,7 +33,7 @@ function Blogs() {
         >
         BLOGS
       </h3>
-          <p className={`mt-4 text-lg ${colors.subheadingColor } font-semibold text-[px]`}>
+          <p className={`mt-4 text-lg md:text-4xl ${colors.subheadingColor } font-semibold text-[px]`}>
             Stay ahead of the Game with Aican
           </p>
         </div>
@@ -63,7 +63,7 @@ function Blogs() {
               />
             </div>
 
-            <img className={`h-[400px] bg-gray-400 w-1/2 align-middle`}></img>
+            <img className={`h-[450px]  bg-gray-400 w-[700px] align-middle`}></img>
           </div>
         </div>
       </div>
@@ -74,10 +74,10 @@ function Blogs() {
     <div className="flex flex-col justify-center items-center ">
       <div className="mb-28">
 
-      <h3 className="text-blue-950 space-x-1 text-4xl mt-8 mb-10 text-center font-semibold">
+      <h3 className={` space-x-1 text-xl sm:text-4xl mt-8 mb-10 text-center font-semibold ${colors.subheadingColor}`}>
         Modular Platform for Your Unique Needs
       </h3>
-      <h1 className="sm:text-lg lg:text-xl  text-black  mx-auto md:w-[80%] flex  justify-center items-center text-center">
+      <h1 className="text-sm sm:text-lg lg:text-xl  text-black  mx-auto md:w-[80%] flex  justify-center items-center text-center">
         We understand that every factory has unique requirements and challenges.
         Our platform is designed to be highly customizable to meet those needs,
         both in terms of hardware and software. With AICAN, you don't need to

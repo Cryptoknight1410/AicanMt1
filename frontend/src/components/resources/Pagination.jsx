@@ -1,19 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import classNames from "classnames";
-import axios from "axios";
 import Colors from "../../constants/colors";
+import blogItems from "../../constants/blogsheader";
 const colors = new Colors();
 
+const Pagination = ({ data }) => {
+ 
 
-
-const Pagination = ({data}) => {
-  
-  console.log("Blogs is "+data);
-  console.log("Blogs is "+data[0].image);
-  
   const itemsPerPage = 9;
-  const totalItems = 27;
+  const totalItems = blogItems.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -27,24 +23,16 @@ const Pagination = ({data}) => {
     const items = [];
 
     for (let i = startIndex; i < endIndex && i < totalItems; i++) {
+      const blogItem = blogItems[i];
+
       items.push(
         <div key={i} className="w-1/3 p-4">
-          <img
-          
-           src="https://unsplash.com/photos/aCniNTiIFd8" alt="Error"
-          ></img>
-          <div className="text-white">
-            <h3 className="text-lg font-bold">
-             {data[0].heading}
-            </h3>
+          <img src={blogItem.image} alt="Error" />
 
-            <p className="text-sm">By AICAN Team // April 29, 2023 {i + 1}</p>
-            <p className="text-sm">
-              Calculating OEE in Excel is a quick and easy way to understand how
-              your machines or manufacturing processes are performing. OEE is
-              one of the KPIs every manufacturing company should track. OEE
-              stands for Overall Equipment Effectiveness; it measures {i + 1}
-            </p>
+          <div className="text-white">
+            <h3 className="text-lg font-bold">{blogItem.heading}</h3>
+            <p className="text-sm">By AICAN Team // April 29, 2023</p>
+            <p className="text-sm">{blogItem.content}</p>
             <p className={`${colors.textGreenColor}`}>Read More »</p>
           </div>
         </div>
@@ -64,7 +52,11 @@ const Pagination = ({data}) => {
       });
 
       pagination.push(
-        <div key={i} className={pageClass} onClick={() => handlePageChange(i)}>
+        <div
+          key={i}
+          className={pageClass}
+          onClick={() => handlePageChange(i)}
+        >
           {i}
         </div>
       );
@@ -75,7 +67,7 @@ const Pagination = ({data}) => {
 
   return (
     <div className={` ${colors.BgColor} `}>
-      <div className={`pagination w-3/4 mx-auto `}>
+      <div className={` w-3/4 mx-auto `}>
         <div className="flex flex-wrap ">{renderItems()}</div>
         <div className="flex justify-center mt-4 pb-5 ">
           {renderPagination()}

@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 function App() {
   useEffect(()=>{
     WebFont.load({google:{
-      families:['Poppins:300, 400, 500, 600, 700'],
+      families:['Poppins:300, 400, 500, 600, 700,Montserrat: 700,600,400'],
     }})
   },[]);
   return (
