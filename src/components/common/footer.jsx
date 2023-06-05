@@ -35,7 +35,7 @@ function Footer() {
             />
             <img
               src="../../src/assets/youtube.svg"
-              alt="LinkedIn Profile Picture"
+              alt="Youtube Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
           </div>
