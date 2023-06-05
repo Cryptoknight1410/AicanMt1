@@ -7,7 +7,7 @@ import Seehowitworks from '../../components/common/seehowitworks'
 import TopHeader from '../../components/common/TopHeader'
 import AutomotiveSoftware from '../../components/industries/AutoMobiles/AutomotiveSoftware'
 import Hero from '../../components/industries/AutoMobiles/Hero'
-import Issues from '../../components/industries/AutoMobiles/issues'
+import Issues from '../../components/industries/AutoMobiles/Issues'
 import Forms from '../../components/common/Forms'
 import Footer from '../../components/common/footer'
 function Electronics() {
