@@ -129,7 +129,7 @@ function Features() {
         </div>
 
         <div className="hidden mx-auto relative top-[-350px] w-[80%] md:flex justify-center">
-          <img src="assets/SIngleHero.svg" className="object-contain" alt="Hero Image" />
+          <img src="assets/SingleHero.svg" className="object-contain" alt="Hero Image" />
         </div>
       </div>
     </div>
