@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Colors from "../../constants/colors";
+// import '../../assets/Applications/'
 let colors = new Colors();
 function Footer() {
   return (
@@ -23,17 +24,17 @@ function Footer() {
           <p className="">770992975</p>
           <div className="flex">
             <img
-              src="../src/assets/linkdln.svg"
+              src="../../src/assets/linkdln.svg"
               alt="LinkedIn Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
             <img
-              src="../src/assets/twitter.svg"
+              src="../../src/assets/twitter.svg"
               alt="LinkedIn Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
             <img
-              src="../src/assets/youtube.svg"
+              src="../../src/assets/youtube.svg"
               alt="LinkedIn Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />

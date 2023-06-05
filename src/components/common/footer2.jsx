@@ -26,7 +26,7 @@ function Footer2({absolute,top}) {
         <p className="">770992975</p>
         <div className="flex">
           <img
-            src="../src/assets/linkdln.svg"
+            src="../../src/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
           />
