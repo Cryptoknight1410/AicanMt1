@@ -24,17 +24,17 @@ function Footer() {
           <p className="">770992975</p>
           <div className="flex">
             <img
-              src="../../src/assets/linkdln.svg"
+              src="/assets/linkdln.svg"
               alt="LinkedIn Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
             <img
-              src="../../src/assets/twitter.svg"
+              src="/assets/twitter.svg"
               alt="LinkedIn Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
             <img
-              src="../../src/assets/youtube.svg"
+              src="/assets/youtube.svg"
               alt="Youtube Profile Picture"
               className="rounded-full border-2 border-solid border-white p-2 m-2"
             />
