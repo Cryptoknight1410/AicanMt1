@@ -1,11 +1,39 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { motion, useAnimation } from "framer-motion";
+import VisibilitySensor from "react-visibility-sensor";
 import Colors from "../constants/colors";
 let colors = new Colors();
 function Card2(margin) {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const [animateCards, setAnimateCards] = useState(false);
+  const controls = useAnimation();
+  const handleVisibilityChange = (isVisible) => {
+    if (isVisible) {
+      
+      setAnimateCards(true);
+    }
+  };
+  useEffect(() => {
+    if (animateCards) {
+      controls.start({ x: 0 });
+    }
+  }, [animateCards, controls]);
   return (
-    <div className={`flex flex-col justify-center items-center md:${margin}`}>
-      <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-[92%] box-border p-5 ${colors.card2}` }>
+      <div className={`flex flex-col items-center md:${margin} overflow-hidden  w-[92%] mx-auto` }>
+    <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
+
+    {({ isVisible }) => (
+    
+      <motion.div
+      style={{overflow:"hidden ",width:"100%"}}
+        initial={{ x: 1000 }}
+        animate={isVisible ? { x: 0 } : { x:1000  }}
+        transition={{ duration: 1 }}
+      >
+      <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-full box-border p-5 ${colors.card2}` }>
         <div className="p-8 flex flex-col md:flex-row items-center justify-center">
           <div className="max-w-3xl mx-auto text-center md:text-left">
             <div className="px-6 py-4 text-center">
@@ -65,7 +93,10 @@ function Card2(margin) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
+      )}
+    </VisibilitySensor>
+      </div>
   );
 }
 

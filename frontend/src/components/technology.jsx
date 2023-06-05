@@ -1,9 +1,33 @@
-import React from "react";
+import React,{useState,useEffect}from "react";
 import Colors from "../constants/colors";
 import { AiOutlineArrowRight } from "react-icons/all";
+import { motion, useAnimation } from "framer-motion";
+import VisibilitySensor from "react-visibility-sensor";
 function Technology() {
+  const [isVisible, setIsVisible] = useState(false);
   const colors = new Colors();
+  const handleVisibilityChange = (isVisible) => {
+    setIsVisible(!isVisible);
+    if (isVisible) {
+      setAnimateCards(true);
+    }
+  };
+  const [animateCards, setAnimateCards] = useState(false);
+  const controls = useAnimation();
+  useEffect(() => {
+    if (animateCards) {
+      controls.start({ x: 0 });
+    }
+  }, [animateCards, controls]);
+
   return (
+    <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
+      {({ isVisible }) => (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={ isVisible ? {opacity: 1} :{opacity:0} }
+          transition={{ duration: 1 }}
+        >
     <div className="flex flex-col justify-center items-center ">
 
       <div className="my-[80px] flex flex-col justify-center items-center">
@@ -15,7 +39,7 @@ function Technology() {
         TECHNOLOGY ARCHITECTURE
       </h3>
       <h1
-        className={`sm:text-lg ${colors.subheadingColor} lg:text-4xl font-bold text-center  w-[60%] md:w-[60%]`}
+        className={`sm:text-lg ${colors.subheadingColor} lg:text-5xl font-bold text-center  w-[60%] md:w-[60%]`}
         >
         Everything about your factory - all on a single screen
       </h1>
@@ -76,6 +100,9 @@ function Technology() {
         </div>
       </div>
     </div>
+       </motion.div>
+       )}
+     </VisibilitySensor>
   );
 }
 
