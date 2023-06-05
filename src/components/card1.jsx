@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { motion, useAnimation } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
 import VisibilitySensor from "react-visibility-sensor";
 import Colors from "../constants/colors";
 let colors = new Colors();
 function Card1() {
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+
   const [isVisible, setIsVisible] = useState(false);
 
   const [animateCards, setAnimateCards] = useState(false);
@@ -27,7 +30,8 @@ function Card1() {
       
         <motion.div
           initial={{ x: -1000 }}
-          animate={isVisible ? { x: 0 } : { x:-1000  }}
+          // animate={isVisible ? { x: 0 } : { x:-1000  }}
+          animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-1000 : 0 }}
           transition={{ duration: 1 }}
         >
           <div className="flex flex-col justify-center items-center my-10 md:my-[150px] ">

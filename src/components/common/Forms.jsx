@@ -1,13 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import Colors from "../../constants/colors";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { motion, useAnimation } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
 import VisibilitySensor from "react-visibility-sensor";
 
 
 let colors = new Colors();
 
 function Forms() {
+  
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
   const [isVisible, setIsVisible] = useState(false);
   const handleVisibilityChange = (isVisible) => {
     if (isVisible) {
@@ -36,7 +39,7 @@ const info = {
     },
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
@@ -63,19 +66,26 @@ const info = {
   }, [animateCards, controls]);
 
   return (
+    
     <div class={`flex md:my-[150px] my-10 overflow-hidden`}>
       <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
         {({ isVisible }) => (
           <motion.div
-          style={{ width: '80%'}}
+          style={{ width: '80%' , display: 'block',
+          '@media (max-width: 767px)': {
+            display: 'none',
+          },}}
+
+          className="my-element"
             initial={{ x: -1000 }}
-            animate={isVisible ? { x: 0 } : { x: -900 }}
+            // animate={isVisible ? { x: 0 } : { x: -900 }}
+            animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-900 : 0 }}
             transition={{ duration: 0.5 }}
           >
             <div
-              className={`flex-grow hidden md:block ${colors.BgColor} rounded-br-3xl rounded-tr-3xl lg:pl-36 lg:pr-32 py-28`}
+              className={`flex-grow hidden md:block ${colors.BgColor} rounded-br-3xl rounded-tr-3xl lg:pl-36 lg:pr-32 py-28 `}
             >
-              <div>
+              <div >
                 <h1
                   className={` mb-8 w-[80%]
             ${colors.textSecondary} text-6xl  font-semibold`}
@@ -140,13 +150,14 @@ const info = {
         {({ isVisible }) => (
           <motion.div
             initial={{ x: 1000 }}
-            animate={isVisible ? { x: 0 } : { x:500 }}
+            // animate={isVisible ? { x: 0 } : { x:500 }}
+            animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?500 : 0 }}
             transition={{ duration: 0.5 }}
           >
             <div
               className={`${colors.forms}  my-[120px] h-auto  md:-ml-28 rounded-tl-3xl rounded-bl-3xl md:px-32 py-24 px-5  relative mx-auto md:flex-grow font-montserrat `}
             >
-              <h2 class="text-xl md:text-5xl font-bold mb-4 text-center lg:text-left  ">
+              <h2 class="text-xl md:text-[46px] font-bold mb-4 text-center lg:text-left  ">
                 Talk to our <span class="text-green-700">Experts</span>
               </h2>
               <p class="text-gray-600 mb-6 font-medium text-center lg:text-left text-base">
@@ -154,7 +165,7 @@ const info = {
                 smarter future.
               </p>
 
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div class=" mb-5 md:mb-8">
                   <input
                     required
@@ -210,7 +221,7 @@ const info = {
                 <div className="h-5"></div>
                 <input
                   type="submit"
-                  onSubmit={handleSubmit}
+                  onSubmit={sendEmail}
                   className={` ${colors.textSecondary} cursor-pointer font-bold py-2 px-4 rounded-xl block  focus:outline-none focus:shadow-outline w-full text-center ${colors.buttonColor}`}
                   value="SEND"
                 ></input>
@@ -220,6 +231,11 @@ const info = {
         )}
       </VisibilitySensor>
     </div>
+
+
+
+
+                
   );
 }
 

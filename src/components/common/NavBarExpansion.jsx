@@ -48,7 +48,10 @@ function NavBarExpansion({ items }) {
           initial={{ rotate: 0 }}
           animate={{ rotate: isOpen ? 180 : 0 }}
         >
-          <AiOutlineDown />
+        <div className="h-[11px] flex items-center">
+  <AiOutlineDown className="h-full w-auto" />
+</div>
+
         </motion.div>
       </div>
 

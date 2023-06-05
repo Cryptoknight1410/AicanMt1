@@ -35,7 +35,7 @@ const RectangleComponent = ({ header, content, image }) => {
         </div>
       </div>
       <img
-        src="../../src/assets/halfrectangle.svg"
+        src="/assets/halfrectangle.svg"
         className={`hidden  w-full xl:block absolute top-[350px]  `}
       ></img>
     </>
