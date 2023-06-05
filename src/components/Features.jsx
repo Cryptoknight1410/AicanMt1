@@ -48,7 +48,7 @@ function Features() {
   return (
     <div className="bg-black w-[92%] flex mx-auto rounded-3xl mt-14 md:mb-[350px] h-[900px] box-border">
       <div className="w-full">
-        <div className="h-[900px] bg-[url('assets/Features.svg')] flex mx-auto justify-center bg-cover text-center">
+        <div className="h-[900px] bg-[url('Features.svg')] flex mx-auto justify-center bg-cover text-center">
           <div className={`text-center ${colors.textSecondary} flex flex-col py-16`}>
             <motion.div
               whileHover={{ scale: 1.1 }}
