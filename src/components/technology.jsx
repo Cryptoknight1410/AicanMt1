@@ -47,8 +47,8 @@ function Technology() {
       <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
     {({ isVisible }) => (
       <motion.div
-      initial={{ x: isLargeScreen ? -1000 : 0 }}
-      animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-1000 : 0 }}
+      initial={{ x: isLargeScreen ? 1000 : 0 }}
+      animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?900 : 0 }}
       transition={{ duration: 1 }}
       className={`${
         isLargeScreen ? 'md:translate-x-0' : ''
