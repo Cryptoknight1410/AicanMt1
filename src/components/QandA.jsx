@@ -57,7 +57,7 @@ function QandA() {
           >
             <div className="w-full md:w-64">
               <img
-                src="./src/assets/sphere1.svg"
+                src="assets/sphere1.svg"
                 alt="Card"
                 className="object-contain mx-auto md:mx-0"
               />
@@ -80,7 +80,7 @@ function QandA() {
           >
             <div className="w-full md:w-64">
               <img
-                src="./src/assets/cube.svg"
+                src="assets/cube.svg"
                 alt="Card"
                 className="object-contain mx-auto md:mx-0"
               />
@@ -100,7 +100,7 @@ function QandA() {
           >
             <div className="w-full md:w-64">
               <img
-                src="./src/assets/stack.svg"
+                src="assets/stack.svg"
                 alt="Card"
                 className="object-contain mx-auto md:mx-0"
               />
@@ -120,7 +120,7 @@ function QandA() {
           >
             <div className="w-full md:w-64">
               <img
-                src="./src/assets/sphere2.svg"
+                src="assets/sphere2.svg"
                 alt="Card"
                 className="object-contain mx-auto md:mx-0"
               />

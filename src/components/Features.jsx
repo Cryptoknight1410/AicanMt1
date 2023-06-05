@@ -48,7 +48,7 @@ function Features() {
   return (
     <div className="bg-black w-[92%] flex mx-auto rounded-3xl mt-14 md:mb-[350px] h-[900px] box-border">
       <div className="w-full">
-        <div className="h-[900px] bg-[url('../src/assets/Features.svg')] flex mx-auto justify-center bg-cover text-center">
+        <div className="h-[900px] bg-[url('assets/Features.svg')] flex mx-auto justify-center bg-cover text-center">
           <div className={`text-center ${colors.textSecondary} flex flex-col py-16`}>
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -73,7 +73,7 @@ function Features() {
                     <motion.img
                       whileHover={{ scale: 1.2, filter: 'brightness(1.2)' }}
                       whileTap={{ scale: 0.9 }}
-                      src="./src/assets/tickMark.svg"
+                      src="assets/tickMark.svg"
                       className="mr-2 mb-2"
                       alt="Tick Mark"
                     />
@@ -92,7 +92,7 @@ function Features() {
                     <motion.img
                       whileHover={{ scale: 1.2, filter: 'brightness(1.2)' }}
                       whileTap={{ scale: 0.9 }}
-                      src="./src/assets/tickMark.svg"
+                      src="assets/tickMark.svg"
                       className="mr-2 mb-2"
                       alt="Tick Mark"
                     />
@@ -111,7 +111,7 @@ function Features() {
                     <motion.img
                       whileHover={{ scale: 1.2, filter: 'brightness(1.2)' }}
                       whileTap={{ scale: 0.9 }}
-                      src="./src/assets/tickMark.svg"
+                      src="assets/tickMark.svg"
                       className="mr-2 mb-2"
                       alt="Tick Mark"
                     />
@@ -129,7 +129,7 @@ function Features() {
         </div>
 
         <div className="hidden mx-auto relative top-[-350px] w-[80%] md:flex justify-center">
-          <img src="./src/assets/SIngleHero.svg" className="object-contain" alt="Hero Image" />
+          <img src="assets/SIngleHero.svg" className="object-contain" alt="Hero Image" />
         </div>
       </div>
     </div>

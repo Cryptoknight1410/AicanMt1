@@ -34,7 +34,7 @@ export default function Seehowitworks({ text, button }) {
             >
               <div className="w-[80px] hidden lg:block">
                 <img
-                  src="../src/assets/database.svg"
+                  src="assets/database.svg"
                   className=" relative lg:bottom-9 lg:left-14  "
                 ></img>
               </div>

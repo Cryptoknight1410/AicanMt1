@@ -13,7 +13,7 @@ function Footer2({absolute,top}) {
         <div className="h-16 w-22 mb-7 z-40">
           <img
             classname="w-full  object-contain"
-            src="../src/assets/aicanlogo2.svg"
+            src="assets/aicanlogo2.svg"
           ></img>
         </div>
         <p className={` w-64 text-sm ${colors.grayText} `}>
@@ -26,17 +26,17 @@ function Footer2({absolute,top}) {
         <p className="">770992975</p>
         <div className="flex">
           <img
-            src="../../src/assets/linkdln.svg"
+            src="/assets/linkdln.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
           />
           <img
-            src="../src/assets/twitter.svg"
+            src="/assets/twitter.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
           />
           <img
-            src="../src/assets/youtube.svg"
+            src="/assets/youtube.svg"
             alt="LinkedIn Profile Picture"
             className="rounded-full border-2 border-solid border-white p-2 m-2"
           />

@@ -51,7 +51,7 @@ function Technology() {
         <div className=" px-8 flex flex-col md:flex-row items-center justify-center">
           <div className="w-full md:w-1/2 md:text-center mb-6 md:mb-0">
             <img
-              src="./src/assets/Group_80_1.png"
+              src="assets/Group_80_1.png"
               alt="Example Image"
               className="mx-auto object-contain min-h-[50%]" 
             />

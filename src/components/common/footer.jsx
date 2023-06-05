@@ -11,7 +11,7 @@ function Footer() {
           <div className="h-16 w-22 mb-7 z-40">
             <img
               classname="w-full  object-contain"
-              src="../src/assets/aicanlogo2.svg"
+              src="/assets/aicanlogo2.svg"
             ></img>
           </div>
           <p className={` w-64 text-sm mt-9 ${colors.grayText}`}>

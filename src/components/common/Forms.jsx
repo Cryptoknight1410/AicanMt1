@@ -127,7 +127,7 @@ const info = {
                   </div>
                   <img
                     className="relative top-[-80px] "
-                    src="../src/assets/Hi.svg"
+                    src="/assets/Hi.svg"
                   ></img>
                 </div>
               </div>

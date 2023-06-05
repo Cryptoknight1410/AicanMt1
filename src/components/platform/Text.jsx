@@ -5,7 +5,7 @@ function Text({margin}) {
   return (
     <div className={`w-full`}>
       <div className={`flex flex-col items-start `}>
-        <img src="../src/assets/doublelines.svg" className="h-5 mb-10"></img>
+        <img src="assets/doublelines.svg" className="h-5 mb-10"></img>
         <div className="mr-8 font-semibold">
           <h1 className={`${colors.subheadingColor} font-bold text-2xl ${margin} `}>
             Stop Problems as They Happen

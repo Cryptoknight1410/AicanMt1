@@ -6,37 +6,37 @@ function Partners() {
     <div className=" mb-7">
       <img
         classname="w-full object-contain"
-        src="../src/assets/companyA.svg"
+        src="=assets/companyA.svg"
       ></img>
     </div>
     <div className=" mb-7">
       <img
         classname="w-full object-contain"
-        src="../src/assets/companyB.svg"
+        src="assets/companyB.svg"
       ></img>
     </div>
     <div className="mb-7 ">
       <img
         classname="w-full h-5 object-cover"
-        src="../src/assets/companyC.svg"
+        src="assets/companyC.svg"
       ></img>
     </div>
     <div className=" mb-7">
       <img
         classname="w-full object-contain"
-        src="../src/assets/companyD.svg"
+        src="assets/companyD.svg"
       ></img>
     </div>
     <div className="mb-7">
       <img
         classname="w-full object-contain"
-        src="../src/assets/companyE.svg"
+        src="assets/companyE.svg"
       ></img>
     </div>
     <div className=" mb-16">
       <img
         classname="w-full object-contain"
-        src="../src/assets/companyF.svg"
+        src="assets/companyF.svg"
       ></img>
     </div>
   </div>

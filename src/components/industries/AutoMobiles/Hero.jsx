@@ -32,7 +32,7 @@ function Hero() {
         </button>
       </div>
 
-      <img src="../src/assets/Industries/automobile.svg" className={`h-80  w-full sm:w-1/2 m-5 `}></img>
+      <img src="assets/Industries/automobile.svg" className={`h-80  w-full sm:w-1/2 m-5 `}></img>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function    Text({heading,subtitle}) {
         <h1 className={`${colors.subheadingColor} font-bold text-2xl  w-[60%]`}>
        {heading}
         </h1>
-      <img src="../src/assets/loader.svg" className="h-5 mb-10 w-1/5 mt-5"></img>
+      <img src="/assets/loader.svg" className="h-5 mb-10 w-1/5 mt-5"></img>
         <p  className={`w-[85%]`}>
        {subtitle}
         </p>

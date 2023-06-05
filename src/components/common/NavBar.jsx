@@ -288,7 +288,7 @@ function NavBar() {
           <div className="w-28 ">
   <img
     className="md:ml-10 object-contain lg:mr-28  xxsm:flex"
-    src="../src/assets/aicanlogo.svg"
+    src="/assets/aicanlogo.svg"
     alt="Aican Logo"
   />
 </div>

@@ -51,7 +51,7 @@ function Hero() {
         </button>
         <div class="w-fullsm:h-[900px] h-auto xsm:w-full ">
           <img
-            src="./src/assets/HeroAssets.svg"
+            src="assets/HeroAssets.svg"
             class="w-full sm:h-[900px] object-contain "
           />
         </div>
