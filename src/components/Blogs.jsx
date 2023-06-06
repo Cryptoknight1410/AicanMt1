@@ -9,7 +9,7 @@ function Blogs() {
       <div className="pt-1">
         <h4 className={`text-xl font-bold w-[60%] ${colors.subheadingColor}`}>{title}</h4>
         <div className="flex flex-row justify-between w-48">
-          <h1 className="text-xs text-[#4C4C4C]">Aican Team</h1>
+          <h1 className="text-xs text-[#4C4C4C]">AICAN Team</h1>
           <h1 className="text-xs text-[#4C4C4C]">3 min Read</h1>
         </div>
 
@@ -34,7 +34,7 @@ function Blogs() {
         BLOGS
       </h3>
           <p className={`mt-4 text-lg md:text-4xl ${colors.subheadingColor } font-semibold text-[px]`}>
-            Stay ahead of the Game with Aican
+            Stay ahead of the Game with AICAN
           </p>
         </div>
         <div className="mt-10 ">

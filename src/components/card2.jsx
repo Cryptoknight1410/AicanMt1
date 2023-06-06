@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { motion, useAnimation } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
 import VisibilitySensor from "react-visibility-sensor";
 import Colors from "../constants/colors";
 let colors = new Colors();
 function Card2(margin) {
-
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
   const [isVisible, setIsVisible] = useState(false);
 
   const [animateCards, setAnimateCards] = useState(false);
@@ -30,7 +31,7 @@ function Card2(margin) {
       <motion.div
       style={{overflow:"hidden ",width:"100%"}}
         initial={{ x: 1000 }}
-        animate={isVisible ? { x: 0 } : { x:1000  }}
+        animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-1000 : 0 }}
         transition={{ duration: 1 }}
       >
       <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-full box-border p-5 ${colors.card2}` }>

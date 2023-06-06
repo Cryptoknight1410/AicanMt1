@@ -55,7 +55,7 @@ function Technology() {
       }`}
       >
     <div
-      className={`${colors.lightbluish} flex-col flex my-9 rounded-3xl w-[92%] md:w-[100%]  mx-auto  box-border p-5`}
+      className={`${colors.lightbluish} flex-col flex my-9 rounded-3xl w-[92%] xl:w-[100%]  mx-auto  box-border p-5`}
       >
       <div className=" px-8 flex flex-col md:flex-row items-center justify-center">
         <div className="w-full md:w-1/2 md:text-center mb-6 md:mb-0">

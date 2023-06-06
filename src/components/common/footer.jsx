@@ -15,13 +15,12 @@ function Footer() {
             ></img>
           </div>
           <p className={` w-64 text-sm mt-9 ${colors.grayText}`}>
-            18th floor Zone Startup India, Bombay Stock Exchange PJ Towers,
-            Dalal Street-400001
+          18th floor, Zone Startup India, Bombay Stock Exchange, PJ Towers, Dalal Street-400001
           </p>
           <div className="h-5"></div>
           <p className=" text-sm">work@aican.co.in</p>
           <div className="h-5"></div>
-          <p className="">770992975</p>
+          <p className="">7709792975</p>
           <div className="flex">
             <img
               src="/assets/linkdln.svg"

@@ -155,10 +155,10 @@ const info = {
             transition={{ duration: 0.5 }}
           >
             <div
-              className={`${colors.forms}  my-[120px] h-auto  md:-ml-28 rounded-tl-3xl rounded-bl-3xl md:px-32 py-24 px-5  relative mx-auto md:flex-grow font-montserrat `}
+              className={`${colors.forms}  my-[120px] h-auto  md:-ml-28 rounded-tl-3xl rounded-bl-3xl md:px-32 py-24 px-5  relative mx-auto md:flex-grow font-montserrat ml-[0px] mr-[100px] sm:mr-[200px]   w-[100%] sm:w-[100%] lg:w-[650px] md:mr-[0px]`}
             >
               <h2 class="text-xl md:text-[46px] font-bold mb-4 text-center lg:text-left  ">
-                Talk to our <span class="text-green-700">Experts</span>
+                Talk to our <span class="text-green-700 leading-relaxed">Experts</span>
               </h2>
               <p class="text-gray-600 mb-6 font-medium text-center lg:text-left text-base">
                 Contact us today to learn more and start your journey towards a
