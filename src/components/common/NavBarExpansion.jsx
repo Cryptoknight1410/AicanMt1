@@ -22,24 +22,24 @@ function NavBarExpansion({ items }) {
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className="flex flex-row items-center"
+        className="flex flex-row items-center ml-48"
         onMouseEnter={() => handleMouseEnter(items)}
       >
         <motion.h2
-          className={`font-semibold text-base cursor-pointer`}
+          className={`font-semibold text-base cursor-pointer  ml-9 `}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 1 }}
         >
-          {Object.keys(items)}
+          {Object.keys(items) }
         </motion.h2>
         <motion.div
           className="h-3 font-semifold cursor-pointer"
           initial={{ rotate: 0 }}
           animate={{ rotate: isHovered ? 180 : 0 }}
         >
-          <div className="h-[15px] flex items-center font-bold">
+          <div className="h-[15px] flex items-center font-bold pl-4 mr-4">
             <AiOutlineDown className="h-full w-auto" />
           </div>
         </motion.div>
