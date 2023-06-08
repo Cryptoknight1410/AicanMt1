@@ -17,7 +17,7 @@ function LeftCard2({image,heading,subheading}) {
     </div>
     <div className='block xsm:hidden'>
 
-    <MobileView ></MobileView>
+    <MobileView text={subheading} img={image}></MobileView>
     </div>
 </>
     

@@ -15,7 +15,7 @@ function RightCard2({image,heading,subheading}) {
         </div>
       </div>
       <div className="block xsm:hidden">
-        <MobileView></MobileView>
+        <MobileView text={subheading} img={image}></MobileView>
       </div>
     </>
   );

@@ -2,19 +2,16 @@ import React, { useState, useRef, useEffect } from "react";
 import Colors from "../../constants/colors";
 import emailjs from "@emailjs/browser";
 import { motion, useAnimation } from "framer-motion";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 import VisibilitySensor from "react-visibility-sensor";
-
 
 let colors = new Colors();
 
 function Forms() {
-  
   const isLargeScreen = useMediaQuery({ minWidth: 1024 });
   const [isVisible, setIsVisible] = useState(false);
   const handleVisibilityChange = (isVisible) => {
     if (isVisible) {
-      
       setAnimateCards(true);
     }
   };
@@ -26,8 +23,7 @@ function Forms() {
   const [animateCards, setAnimateCards] = useState(false);
   const controls = useAnimation();
 
-
-const info = {
+  const info = {
     service_id: "service_l520ych",
     template_id: "template_llw9kuf",
     user_id: "lhIFq2tMK2_hQ78VI",
@@ -66,26 +62,31 @@ const info = {
   }, [animateCards, controls]);
 
   return (
-    
-    <div class={`flex md:my-[150px] my-10 overflow-hidden`}>
-      <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
+    <div class={`flex md:my-[150px] my-10 overflow-hidden `} id="forms">
+      {/* <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
         {({ isVisible }) => (
           <motion.div
-          style={{ width: '80%' , display: 'block',
-          '@media (max-width: 767px)': {
-            display: 'none',
-          },}}
-
-          className="my-element"
+            style={{
+              width: "80%",
+              display: "block",
+              "@media (max-width: 767px)": {
+                display: "none",
+              },
+            }}
+            className="my-element"
             initial={{ x: -1000 }}
             // animate={isVisible ? { x: 0 } : { x: -900 }}
-            animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-900 : 0 }}
+            animate={
+              isVisible
+                ? { x: isLargeScreen ? 0 : 0 }
+                : { x: isLargeScreen ? -900 : 0 }
+            }
             transition={{ duration: 0.5 }}
-          >
+          > */}
             <div
               className={`flex-grow hidden md:block ${colors.BgColor} rounded-br-3xl rounded-tr-3xl lg:pl-36 lg:pr-32 py-28 `}
             >
-              <div >
+              <div>
                 <h1
                   className={` mb-8 w-[80%]
             ${colors.textSecondary} text-6xl  font-semibold`}
@@ -98,7 +99,7 @@ const info = {
                 </p>
                 <div className="h-16"></div>
                 <p
-                  className={`${colors.textSecondary} text-base w-[70%] leading-loose pb-16` }
+                  className={`${colors.textSecondary} text-base w-[70%] leading-loose pb-16`}
                 >
                   Our team of experts are ready to guide you through the process
                   of implementing AICAN's cutting-edge solutions into your
@@ -142,23 +143,28 @@ const info = {
                 </div>
               </div>
             </div>
-          </motion.div>
+          {/* </motion.div>
         )}
-      </VisibilitySensor>
+      </VisibilitySensor> */}
 
-      <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
+      {/* <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
         {({ isVisible }) => (
           <motion.div
             initial={{ x: 1000 }}
             // animate={isVisible ? { x: 0 } : { x:500 }}
-            animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?500 : 0 }}
+            animate={
+              isVisible
+                ? { x: isLargeScreen ? 0 : 0 }
+                : { x: isLargeScreen ? 500 : 0 }
+            }
             transition={{ duration: 0.5 }}
-          >
+          > */}
             <div
-              className={`${colors.forms}  my-[120px] h-auto  md:-ml-28 rounded-tl-3xl rounded-bl-3xl md:px-32 py-24 px-5  relative mx-auto md:flex-grow font-montserrat ml-[0px] mr-[100px] sm:mr-[200px]   w-[100%] sm:w-[100%] lg:w-[650px] md:mr-[0px]`}
+              className={`${colors.forms}  my-[120px] h-auto  mx-auto md:-ml-28 rounded-tl-3xl rounded-bl-3xl md:px-32 py-24 px-5  relative flex-grow font-montserrat      w-[100%] sm:w-[100%]  md:mr-[0px]`}
             >
               <h2 class="text-xl md:text-[46px] font-bold mb-4 text-center lg:text-left  ">
-                Talk to our <span class="text-green-700 leading-relaxed">Experts</span>
+                Talk to our{" "}
+                <span class="text-green-700 leading-relaxed">Experts</span>
               </h2>
               <p class="text-gray-600 mb-6 font-medium text-center lg:text-left text-base">
                 Contact us today to learn more and start your journey towards a
@@ -172,9 +178,9 @@ const info = {
                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="name"
                     value={name}
-                    onChange={(e)=>{
-                      setName(e.target.value)
-                  }}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
                     type="text"
                     placeholder="Name *"
                   />
@@ -200,8 +206,8 @@ const info = {
                     type="number"
                     placeholder="Contact *"
                     value={phone}
-                    onChange={(e)=>{
-                        setPhone(e.target.value)
+                    onChange={(e) => {
+                      setPhone(e.target.value);
                     }}
                   />
                 </div>
@@ -213,9 +219,9 @@ const info = {
                     type="text"
                     placeholder="Company Name *"
                     value={companysname}
-                    onChange={(e)=>{
-                      setCompanyName(e.target.value)
-                  }}
+                    onChange={(e) => {
+                      setCompanyName(e.target.value);
+                    }}
                   />
                 </div>
                 <div className="h-5"></div>
@@ -227,15 +233,10 @@ const info = {
                 ></input>
               </form>
             </div>
-          </motion.div>
+          {/* </motion.div>
         )}
-      </VisibilitySensor>
+      </VisibilitySensor> */}
     </div>
-
-
-
-
-                
   );
 }
 

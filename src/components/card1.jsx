@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { motion, useAnimation } from "framer-motion";
 import { useMediaQuery } from 'react-responsive';
+import { Link } from "react-router-dom";
 import VisibilitySensor from "react-visibility-sensor";
 import Colors from "../constants/colors";
 let colors = new Colors();
@@ -24,16 +25,7 @@ function Card1() {
     }
   }, [animateCards, controls]);
   return (
-    <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
-
-      {({ isVisible }) => (
-      
-        <motion.div
-          initial={{ x: -1000 }}
-          // animate={isVisible ? { x: 0 } : { x:-1000  }}
-          animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-1000 : 0 }}
-          transition={{ duration: 1 }}
-        >
+   
           <div className="flex flex-col justify-center items-center my-10 md:my-[150px] ">
             <div
               className={`${colors.card1} p-5 flex-col flex my-9 rounded-3xl w-[92%] box-border`}
@@ -105,11 +97,15 @@ function Card1() {
                   className={`${colors.borderGreenColor} w-full my-6 mt-20`}
                 />
                 <div className="flex items-baseline justify-center ">
+
+                  <Link to="/Platforms/AICANIoT">
+
                   <h3
                     className={`text-sm my-3 sm:text-base lg:text-base ${colors.textGreenColor} font-semibold text-center cursor-pointer tracking-[0.5em]`}
-                  >
+                    >
                     START YOUR TRANSFORMATION NOW
                   </h3>
+                  </Link>
                   <AiOutlineArrowRight
                     className={`hidden xsm:block cursor-pointer ${colors.textGreenColor} font-semibold`}
                   />
@@ -117,9 +113,7 @@ function Card1() {
               </div>
             </div>
           </div>
-        </motion.div>
-      )}
-    </VisibilitySensor>
+       
   );
 }
 

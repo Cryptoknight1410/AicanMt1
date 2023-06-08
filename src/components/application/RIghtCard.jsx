@@ -15,7 +15,8 @@ function RightCard({image}) {
         </div>
       </div>
       <div className="block xsm:hidden">
-        <MobileView></MobileView>
+        <MobileView text=" Our Error Tracing feature simplifies the process of identifying root causes when errors or production failures occur. By tracking every detail of machine performance and worker actions, we provide a pinpoint location of the error that caused the production to fail or stop. Save valuable time and resources by quickly identifying and addressing the root cause of any issue in your factory within seconds using AICAN!" 
+        img={image}></MobileView>
       </div>
     </>
   );

@@ -4,56 +4,23 @@ import { AiOutlineArrowRight } from "react-icons/all";
 import { useMediaQuery } from 'react-responsive';
 import { motion, useAnimation } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
-function Technology() {
+function Technology({startTransform}) {
   const [isVisible, setIsVisible] = useState(false);
   const colors = new Colors();
-  const handleVisibilityChange = (isVisible) => {
-    setIsVisible(!isVisible);
-    if (isVisible) {
-      setAnimateCards(true);
-    }
-  };
+  
   const [animateCards, setAnimateCards] = useState(false);
   const controls = useAnimation();
-  useEffect(() => {
-    if (animateCards) {
-      controls.start({ x: 0 });
-    }
-  }, [animateCards, controls]);
-
+  
   const isLargeScreen = useMediaQuery({ minWidth: 1024 });
 
   return (
     
-    <div className="flex flex-col justify-center items-center ">
+    <div className="flex flex-col justify-center items-center  ">
 
-      <div className="my-[80px] flex flex-col justify-center items-center">
-
-
-      <h3
-        className={`${colors.headingColor}  text-xl text-center font-semibold `}
-        >
-        TECHNOLOGY ARCHITECTURE
-      </h3>
-      <h1
-        className={`sm:text-lg ${colors.subheadingColor} lg:text-5xl font-bold text-center  w-[60%] md:w-[60%]`}
-        >
-        Everything about your factory - all on a single screen
-      </h1>
-      <div className="h-0 md:h-10"></div>
-        </div>
+    
         <div className="overflow-hidden">
       
-      <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
-    {({ isVisible }) => (
-      <motion.div
-      initial={{ x: isLargeScreen ? 1000 : 0 }}
-      animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?900 : 0 }}
-      transition={{ duration: 1 }}
-      className={`${
-        isLargeScreen ? 'md:translate-x-0' : ''
-      }`}
-      >
+      
     <div
       className={`${colors.lightbluish} flex-col flex my-9 rounded-3xl w-[92%] xl:w-[100%]  mx-auto  box-border p-5`}
       >
@@ -98,7 +65,7 @@ function Technology() {
         <hr className={`${colors.borderBlueColor} w-full my-6`} />
         <div className="flex items-baseline justify-center ">
           <h3
-            className={`text-sm my-3 sm:text-base lg:text-lg ${colors.headingColor} font-semibold text-center cursor-pointer tracking-[0.5em]`}
+            className={`text-sm my-3 sm:text-base lg:text-lg ${colors.headingColor} font-semibold text-center cursor-pointer tracking-[0.5em]` } onClick={startTransform}
             >
             START YOUR TRANSFORMATION NOW
           </h3>
@@ -108,9 +75,7 @@ function Technology() {
         </div>
       </div>
     </div>
-     </motion.div>
-     )}
-   </VisibilitySensor>
+     
      </div>
     </div>
   );

@@ -17,7 +17,7 @@ function LeftCard({image}) {
     </div>
     <div className='block xsm:hidden'>
 
-    <MobileView ></MobileView>
+    <MobileView  text="Our platform maintains comprehensive error logs that record every error event, including timestamps, machine parameters, and worker actions. These logs serve as a valuable resource for root cause analysis and historical tracking. Additionally, our system generates real-time alerts and notifications when errors occur, allowing you to take immediate action and minimize production disruptions." img={image}></MobileView>
     </div>
 </>
     

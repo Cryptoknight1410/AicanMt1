@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import VisibilitySensor from "react-visibility-sensor";
 import Colors from "../constants/colors";
 let colors = new Colors();
-function Card2(margin) {
+function Card2({margin,startTransform}) {
   const isLargeScreen = useMediaQuery({ minWidth: 1024 });
   const [isVisible, setIsVisible] = useState(false);
 
@@ -17,23 +17,12 @@ function Card2(margin) {
       setAnimateCards(true);
     }
   };
-  useEffect(() => {
-    if (animateCards) {
-      controls.start({ x: 0 });
-    }
-  }, [animateCards, controls]);
+ 
   return (
       <div className={`flex flex-col items-center md:${margin} overflow-hidden  w-[92%] mx-auto` }>
-    <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
+   
 
-    {({ isVisible }) => (
-    
-      <motion.div
-      style={{overflow:"hidden ",width:"100%"}}
-        initial={{ x: 1000 }}
-        animate={isVisible ? { x: isLargeScreen ? 0 : 0 } : { x: isLargeScreen ?-1000 : 0 }}
-        transition={{ duration: 1 }}
-      >
+   
       <div className={`flex-col flex mb-9 mt-9 rounded-3xl w-full box-border p-5 ${colors.card2}` }>
         <div className="p-8 flex flex-col md:flex-row items-center justify-center">
           <div className="max-w-3xl mx-auto text-center md:text-left">
@@ -84,7 +73,7 @@ function Card2(margin) {
           <hr className={`${colors.borderTomotoColor} w-full my-6 mt-20`} />
           <div className="flex items-baseline justify-center ">
             <h3
-              className={`text-sm my-3 sm:text-base lg:text-base ${colors.textTomotoColor} font-semibold text-center cursor-pointer tracking-[0.5em] `}
+              className={`text-sm my-3 sm:text-base lg:text-base ${colors.textTomotoColor} font-semibold text-center cursor-pointer tracking-[0.5em] `} onClick={startTransform}
             >
               START YOUR TRANSFORMATION NOW
             </h3>
@@ -94,9 +83,8 @@ function Card2(margin) {
           </div>
         </div>
       </div>
-    </motion.div>
-      )}
-    </VisibilitySensor>
+  
+
       </div>
   );
 }

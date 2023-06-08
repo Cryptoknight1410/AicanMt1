@@ -2,12 +2,15 @@ import React from "react";
 import Colors from "../constants/colors";
 const colors = new Colors();
 function Blogs() {
-  const Card = ({ image, title, subtitle ,h}) => (
+  const Card = ({ image, title, subtitle ,h,imagemargin}) => (
     <div className="p-4 flex flex-col w-[90%]">
-      <img className={` ${h} w-60 rounded-lg" src={image}`}  />
+      <div >
+
+      <img className={` ${h} w-[80%] rounded-lg" ${imagemargin} `} src={image} />
+      </div>
 
       <div className="pt-1">
-        <h4 className={`text-xl font-bold w-[60%] ${colors.subheadingColor}`}>{title}</h4>
+        <h4 className={`text-xl font-bold w-[80%] ${colors.subheadingColor}`}>{title}</h4>
         <div className="flex flex-row justify-between w-48">
           <h1 className="text-xs text-[#4C4C4C]">AICAN Team</h1>
           <h1 className="text-xs text-[#4C4C4C]">3 min Read</h1>
@@ -41,29 +44,37 @@ function Blogs() {
           <div className="flex flex-row justify-around items-start">
             <div className="w-[50%]">
               <Card
-               h="h-[100px]"
-                image="https://tailwindui.com/img/placeholder-images"
+              imagemargin=""
+               h="h-full"
+                image="/assets/blogs/Blog4.jpg"
                 subtitle=""
-                title="How to Calculate OEE in Excel Video"
+                title="Predictive Maintenance and Real-Time Monitoring"
               />
               <Card
-               h="h-[100px]"
-                image="https://tailwindui.com/img/placeholder-images/"
-                title="How to Calculate OEE in Excel Video"
+              imagemargin=""
+               h="h-full"
+                image="/assets/blogs/Blog2.jpg"
+                title="The Role of Digitization in Optimizing Industrial Processes
+                "
                 subtitle=""
               />
             </div>
 
             <div className="w-[50%] flex items-center  justify-center">
               <Card
-                h="h-[200px]"
-                image="https://tailwindui.com/img/placeholder-images/"
-                title="How to Calculate OEE in Excel Video"
-                subtitle="Calculating OEE in Excel is a quick and easy way to understand how your machines or manufacturing processes are performing. OEE is one of the KPIs every manufacturing company should track. OEE stands for Overall Equipment Effectiveness; it measures.."
+                imagemargin="mb-[50px]"
+                h="h-[300px]"
+                image="/assets/blogs/Blog1.jpg"
+                title="India's Rise in Manufacturing: How it will Dominate the Global Manufacturing Sector in the upcoming years
+
+                "
+                subtitle="With over 1.4 billion citizens, India is the second-most populated nation in the world and is expected to surpass China by 2027. India is also the world’s fastest-growing major economy, with an annual growth rate of 7.5% in 2016. In some ways, India is already a manufacturing powerhouse. It is the world’s second-largest producer of steel, and it has the world’s third-largest automotive industry.
+                But India’s manufacturing sector..
+                "
               />
             </div>
 
-            <img className={`h-[450px]  bg-gray-400 w-[700px] align-middle`}></img>
+            <img className={`h-[700px]  bg-gray-400 w-[700px] align-middle`}></img>
           </div>
         </div>
       </div>
