@@ -17,77 +17,63 @@ import { animateScroll as scroll } from "react-scroll";
 
 function HomePage() {
   const handleScrollToForms = () => {
-   
     const formsSection = document.getElementById("forms-section");
     formsSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    
   };
 
   return (
-    <div className="lg:snap-y lg:h-screen lg:w-screen  lg:overflow-y-scroll lg:overflow-x-hidden lg:snap-mandatory">
-      <div className="lg:w-screen lg:h-screen lg:snap-center">
-        <TopHeader  onKnowMoreClick={handleScrollToForms}/>
-        <NavBar />
-        <Hero />
+    <div className="lg:snap-y lg:h-screen lg:w-screen  lg:overflow-y-scroll lg:overflow-x-hidden ">
+      <TopHeader onKnowMoreClick={handleScrollToForms} />
+      <NavBar />
+      <Hero />
+      <div className="lg:mb-[60px]">
+
       </div>
 
-      <div className="lg:w-screen lg:h-screen lg:snap-center ">
-        <HomePageImage></HomePageImage>
+      <HomePageImage></HomePageImage>
+
+      <div className="lg:mb-[30px]">
+
       </div>
 
-      <div className="lg:w-screen lg:h-screen lg:snap-center flex-col ">
-        <div >
+      <Seehowitworks
+        text={
+          "Optimize your factory floor operations with AICAN's SaaS platform. Gain real-time visibility into worker performance, work timings, and analyze productivity. Trace errors for root cause analysis and monitor cycle times and micro  stops for all machines."
+        }
+        button={"See how it works"}
+        route="/Application/WorkerAnalytics"
+      ></Seehowitworks>
 
-        <Seehowitworks
-          text={
-            "Optimize your factory floor operations with AICAN's SaaS platform. Gain real-time visibility into worker performance, work timings, and analyze productivity. Trace errors for root cause analysis and monitor cycle times and micro  stops for all machines."
-          }
-          button={"See how it works"} route="/Application/WorkerAnalytics"
-          ></Seehowitworks>
-          </div>
-          <div>
+      <TechnoWriting></TechnoWriting>
 
-        <TechnoWriting></TechnoWriting>
-          </div>
-      </div>
+      <Technology startTransform={handleScrollToForms}></Technology>
 
-      <div className="lg:w-screen  lg:snap-center my-5  ">
-        <Technology startTransform={handleScrollToForms}></Technology>
-      </div>
+      <QandA></QandA>
 
-      <div className="w-screen lg:h-screen snap-center  lg:relative lg:top-5">
-        <QandA></QandA>
-      </div>
-      <div className="lg:w-screen lg:h-screen lg:snap-center flex lg:items-center justify-center">
-        <Seehowitworks
-          text={
-            "By tracking and analyzing real-time data related to machine performance and worker activities, we empower you to quickly pinpoint the sources of errors, take immediate corrective actions, and continuously improve your manufacturing processes. Discover the power of our platform to unlock new levels of efficiency and profitability for your business."
-          }
-          button={"Learn More"} route="/Application/ErrorTracing"
-        ></Seehowitworks>
-      </div>
 
-      <div className="w-screen lg:h-screen lg:snap-center ">
-        <Card1></Card1>
-      </div>
-      <div className="lg:w-screen  lg:snap-center ">
-        <Features></Features>
-      </div>
+        <div></div>
+      <Seehowitworks
+        text={
+          "By tracking and analyzing real-time data related to machine performance and worker activities, we empower you to quickly pinpoint the sources of errors, take immediate corrective actions, and continuously improve your manufacturing processes. Discover the power of our platform to unlock new levels of efficiency and profitability for your business."
+        }
+        button={"Learn More"}
+        route="/Application/ErrorTracing"
+      ></Seehowitworks>
 
-      <div className="lg:w-screen lg:h-screen lg:snap-center 0 relative top-[100px] ">
-        <Card2 margin="mt-[430px] " startTransform={handleScrollToForms}></Card2>
-      </div>
+      <Card1></Card1>
 
-      <div className="lg:w-screen g:h-screen lg:snap-center lg:relative " id="forms-section">
-        <Forms></Forms>
-      </div>
-      <div className="lg:w-screen lg:h-screen lg:snap-start lg:relative lg:top-[200px]">
-        <Blogs></Blogs>
-      </div>
+      <Features></Features>
 
-      <div className="lg:w-screen h-[90px] lg:snap-start lg:relative top-[670px]" >
-        <Footer></Footer>
-      </div>
+      <Card2 margin="mt-[430px] " startTransform={handleScrollToForms}></Card2>
+
+
+      <div id="forms-section">
+      <Forms></Forms>
+        </div>  
+
+      <Blogs></Blogs>
+
+      <Footer></Footer>
     </div>
   );
 }

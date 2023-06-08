@@ -54,6 +54,10 @@ function NavBar() {
           "AICAN IoT":
             "AICAN platforms bring the latest technology to fulfill the needs of production supervisors. ",
         },
+        {
+          "India's Rise in Manufacturing: How it will Dominate...":
+          "assets/blogs/Blog1.jpg"
+        }
       ],
     },
     {
@@ -78,6 +82,10 @@ function NavBar() {
           Pharmaeuticals:
             "AICAN platforms bring the latest technology to fulfill the needs of production supervisors. ",
         },
+        {
+          "Predictive Maintenance and Real-Time Monitoring":
+          "assets/blogs/Blog4.jpg"
+        }
       ],
     },
     {
@@ -102,6 +110,10 @@ function NavBar() {
           "Error Tracing":
             "AICAN platforms bring the latest technology to fulfill the needs of production supervisors. ",
         },
+        {
+          "The Role of Digitization in Optimizing Industrial Processes":
+          "assets/blogs/Blog3.jpg"
+        }
       ],
     },
     {
@@ -125,6 +137,10 @@ function NavBar() {
           Downtime:
             "AICAN platforms bring the latest technology to fulfill the needs of production supervisors. ",
         },
+        {
+          "India's Rise in Manufacturing: How it will Dominate...":
+          "assets/blogs/Blog1.jpg"
+        }
       ],
     },
   ];

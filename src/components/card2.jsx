@@ -19,7 +19,7 @@ function Card2({margin,startTransform}) {
   };
  
   return (
-      <div className={`flex flex-col items-center md:${margin} overflow-hidden  w-[92%] mx-auto` }>
+      <div className={`flex flex-col items-center md:${margin} overflow-hidden md:mt-[400px] w-[92%] mx-auto` }>
    
 
    

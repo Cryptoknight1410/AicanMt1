@@ -26,7 +26,7 @@ function Card1() {
   }, [animateCards, controls]);
   return (
    
-          <div className="flex flex-col justify-center items-center my-10 md:my-[150px] ">
+          <div className="flex flex-col justify-center items-center my-10 md:mb-[150px] md:mt-[100px] ">
             <div
               className={`${colors.card1} p-5 flex-col flex my-9 rounded-3xl w-[92%] box-border`}
             >

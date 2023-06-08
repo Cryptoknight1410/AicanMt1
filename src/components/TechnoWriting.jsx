@@ -4,7 +4,7 @@ const colors = new Colors();
 function TechnoWriting() {
   return (
     <div>
-      <div className=" flex flex-col justify-center items-center lg:mt-56">
+      <div className=" flex flex-col justify-center items-center lg:mt-40 lg:mb-20">
         <h3
           className={`${colors.headingColor}  text-xl text-center font-semibold  `}
         >

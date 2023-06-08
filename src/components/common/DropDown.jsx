@@ -4,6 +4,8 @@ function DropDown({ items }) {
   const colors = new Colors();
   let array2 = Object.values(items);
   console.log(items)
+
+  
   return (
     <div>
       {array2.map((item) => {
@@ -99,10 +101,13 @@ function DropDown({ items }) {
             </div>
 
             <div className="flex flex-col">
-              <p>Whats New</p>
-              <img src="http://via.placeholder.com/300x200"></img>
+              <p className="font-bold">Whats New</p>
+              <div className="w-[300px]">
 
-              <h1>How to calculate OEE in Excel Video</h1>
+              <img src={Object.values(item[5])}></img>
+              </div>
+
+              <h1 className="w-[300px] font-semibold">{Object.keys(item[5])}</h1>
               <h1 className={`${colors.textGreenColor}`}>Read More &gt;</h1>
             </div>
           </div>
