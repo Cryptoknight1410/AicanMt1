@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import HomePage from './pages/HomePage';
 import WebFont from 'webfontloader';
-import Example from './pages/eXAMPLE.JSX';
+
 
 
 
