@@ -45,43 +45,43 @@ function NavBarExpansion({ items }) {
     >
       <div className="flex flex-row justify-around w-32 p-5 mx-10">
       <div
-        className="flex flex-row items-center ml-48"
+        className="flex flex-row items-center ml-48 font-bold"
        
       >
-        <motion.h2
+        {/* <motion.h2
           className={`font-semibold text-base cursor-pointer  ml-9 `}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           
           transition={{ duration: 1 }}
-        >
+        > */}
           {Object.keys(items)}
-        </motion.h2>
-        <motion.div
+        {/* </motion.h2> */}
+        {/* <motion.div
           className="h-3 font-semifold cursor-pointer"
           initial={{ rotate: 0 }}
           animate={{ rotate: isHovered ? 180 : 0 }}
-        >
+        > */}
           <div className="h-[11px] flex items-center  pl-4 mr-4 ">
             <AiOutlineDown className="h-full w-auto" />
           </div>
-        </motion.div>
+        {/* </motion.div> */}
       </div>
 
       {isHovered && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.95 }}
-          translate={{ duration: 10 }}
-          ref={submenuRef}
+        // <motion.div
+        //   initial={{ opacity: 0, scale: 0.95 }}
+        //   animate={{ opacity: 1, scale: 1 }}
+        //   exit={{ opacity: 0, scale: 0.95 }}
+        //   translate={{ duration: 10 }}
+        //   ref={submenuRef}
         
           // onMouseEnter={handleMouseEnter}
           // onMouseLeave={handleMouseLeave}
-        >
+        // >
            <DropDown items={selectedItem} />
-          {console.log("DropDown Triggered")}
-        </motion.div>
+          // {console.log("DropDown Triggered")}
+        // </motion.div>
       )}
       </div>
     </nav>

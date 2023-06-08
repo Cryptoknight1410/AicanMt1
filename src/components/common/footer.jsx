@@ -11,7 +11,7 @@ function Footer() {
           <div className="h-16 w-22 mb-7 z-40">
             <img
               classname="w-full  object-contain"
-              src="assets/aicanlogo2.svg"
+              src="../assets/aicanlogo2.svg"
             ></img>
           </div>
           <p className={` w-64 text-sm mt-9 ${colors.grayText}`}>
@@ -21,7 +21,7 @@ function Footer() {
           <div className="h-5"></div>
           <p className=" text-sm">work@aican.co.in</p>
           <div className="h-5"></div>
-          <p className="">7709792975</p>
+          <p className="text-sm">7709792975</p>
           <div className="flex">
             <a
               href="https://www.linkedin.com/company/ai-can-co-in/"

@@ -39,7 +39,7 @@ function Blogs() {
       <Seehowitworks
         text={
           "Built by people who know manufacturing, Mingo Smart Factory provides the 21st century “Smart Factory” experience that manufacturers need to grow in a modern environment. See how it can help you drive revenue."
-        }
+         } button="See how it works"
       ></Seehowitworks>
       <Footer></Footer>
     </div>

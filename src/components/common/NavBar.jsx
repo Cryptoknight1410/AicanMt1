@@ -3,6 +3,7 @@ import { AiOutlineMenu } from "react-icons/all";
 import Button from "./Button";
 import Colors from "../../constants/colors";
 import NavBarExpansion from "./NavBarExpansion";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const colors = new Colors();
@@ -112,7 +113,7 @@ function NavBar() {
         },
         {
           "The Role of Digitization in Optimizing Industrial Processes":
-          "assets/blogs/Blog3.jpg"
+          "assets/blogs/Blog2.jpg"
         }
       ],
     },
@@ -163,9 +164,11 @@ function NavBar() {
             >
               <nav>
                 <div className="p-4">
-                  <div className="mb-10">
+                  <Link to="/">
+                  <div className="mb-10 cursor-pointer">
                     <img src="../assets/aicanlogo.svg"></img>
                   </div>
+                  </Link>
                   <button
                     className="font-semibold flex items-center justify-between"
                     onClick={() => toggleSubMenu("platform")}
@@ -339,11 +342,13 @@ function NavBar() {
             </div>
           </button>
           <div className="w-28">
+            <Link to="/">
             <img
               className="md:ml-10 object-contain lg:mr-28  xxsm:flex"
               src="/assets/aicanlogo.svg"
               alt="Aican Logo"
-            />
+              />
+              </Link>
           </div>
 
           <div className="hidden xsm:flex lg:ml-14  ">

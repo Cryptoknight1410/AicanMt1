@@ -114,22 +114,22 @@ function Forms() {
           <div className={`flex`}>
             <div className={`flex flex-col`}>
               <img
-                src="https://via.placeholder.com/100x100"
+                src="../assets/vedant.png"
                 alt="Image 1"
                 class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
               />
               <p className={`mt-2 ${colors.textSecondary}`}>Vedant Awasthi</p>
-              <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
+              <p className={` ${colors.textSecondary}`}>Co-Founder of AICAN</p>
             </div>
             <div className="w-5"></div>
             <div className={`flex flex-col`}>
               <img
-                src="https://via.placeholder.com/100x100"
+                src="../assets/ritvik.png"
                 alt="Image 1"
                 class="h-16 w-16 lg:h-24 lg:w-24 rounded-full object-cover"
               />
               <p className={`mt-2 ${colors.textSecondary}`}>Ritwik Dhar</p>
-              <p className={` ${colors.textSecondary}`}>Co-Founder of Aican</p>
+              <p className={` ${colors.textSecondary}`}>Co-Founder of AICAN</p>
             </div>
             <img className="relative top-[-80px] " src="/assets/Hi.svg"></img>
           </div>
